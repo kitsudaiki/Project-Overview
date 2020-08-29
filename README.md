@@ -1,14 +1,20 @@
-# Kitsunemimi-Projects
+# Kitsunemimi-Projects-Meta
 
-
+This repository is only to keep an overview of my repositories. With this the version of library requirements should be in sync and this project is for issue tickets, which affect all repositories.
 
 ## libKitsunemimiCommon 
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.15.0`
+- **current version**: `0.15.1`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
@@ -26,11 +32,17 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 ## libKitsunemimiPersistence
 
-- **content**: Functionalities to read and write files and logging.
+- **content**: This library contains all my functions for interactions with the storage. At the moment its the smalest of my projects and only contains functionality to read, modify and write binaray- and text- files, handle an sqlite3-database and write log-files.
 
-- **current version**: `0.8.2`
+- **current version**: `0.10.0`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
@@ -49,13 +61,13 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 name | repository | version | task
 --- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-sqlite3 library | libsqlite3-dev | 3.x | handling of sqlite databases
+sqlite3 library | libsqlite3-dev | 3.x | handling of sqlite databases (only when build with sqlite)
 
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 
@@ -63,9 +75,15 @@ libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.2`
+- **current version**: `0.10.3`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJson.git
 
@@ -85,7 +103,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 
@@ -93,9 +111,15 @@ libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.3`
+- **current version**: `0.4.4`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiIni.git
 
@@ -115,7 +139,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 
@@ -123,9 +147,15 @@ libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
-- **current version**: `0.7.2`
+- **current version**: `0.7.3`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
@@ -145,18 +175,24 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.2 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.10.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 
 
 ## libKitsunemimiNetwork
 
-- **content**: Provides unix-domain-sockets, tcp-sockets and tls-encrypted tcp-sockets.
+- **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
 
-- **current version**: `0.6.2`
+- **current version**: `0.6.4`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
@@ -179,18 +215,24 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 
 
 ## libKitsunemimiArgs
 
-- **content**: Parser for cli-arguments.
+- **content**: Small and easy to use parser for CLI-arguments.
 
-- **current version**: `0.1.3`
+- **current version**: `0.2.0`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
 
@@ -212,8 +254,8 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 
 
@@ -221,9 +263,15 @@ libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemim
 
 - **content**: Parser for cli-arguments.
 
-- **current version**: `0.2.2`
+- **current version**: `0.2.3`
 
 - **license**: `MIT`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
 
@@ -247,9 +295,9 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiIni | v0.4.3 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 
 
@@ -257,9 +305,15 @@ libKitsunemimiIni | v0.4.3 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `-`
+- **current version**: `0.2.0`
 
 - **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **state**: `public`
+
+- **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
 
@@ -282,6 +336,6 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.12.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | v0.6.1 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
