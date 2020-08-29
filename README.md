@@ -2,12 +2,44 @@
 
 This repository is only to keep an overview of my repositories. With this the version of library requirements should be in sync and this project is for issue tickets, which affect all repositories.
 
+## Overview
+
+### Sakura-Project
 
 [SakuraTree](#SakuraTree)
 
+[libKitsunemimiSakuraNetwork](#libKitsunemimiSakuraNetwork)
+
+[libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
+
+### generic project libraries
+
+[libKitsunemimiProjectNetwork](#libKitsunemimiProjectNetwork)
+
+### generic libraries
+
+[libKitsunemimiConfig](#libKitsunemimiConfig)
+
+[libKitsunemimiArgs](#libKitsunemimiArgs)
+
+[libKitsunemimiNetwork](#libKitsunemimiNetwork)
+
+[libKitsunemimiJinja2](#libKitsunemimiJinja2)
+
+[libKitsunemimiIni](#libKitsunemimiIni)
+
+[libKitsunemimiJson](#libKitsunemimiJson)
+
+[libKitsunemimiPersistence](#libKitsunemimiPersistence)
+
+[libKitsunemimiCommon](#libKitsunemimiCommon)
 
 
-## libKitsunemimiCommon 
+## Repositories
+
+### libKitsunemimiCommon 
+
+#### Metadata
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
@@ -23,8 +55,6 @@ This repository is only to keep an overview of my repositories. With this the ve
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
-### Requirements
-
 #### Required build tools
 
 name | repository | version | task
@@ -35,7 +65,9 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 
 
-## libKitsunemimiPersistence
+### libKitsunemimiPersistence
+
+#### Metadata
 
 - **content**: This library contains all my functions for interactions with the storage. At the moment its the smalest of my projects and only contains functionality to read, modify and write binaray- and text- files, handle an sqlite3-database and write log-files.
 
@@ -50,8 +82,6 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-### Requirements
 
 #### Required build tools
 
@@ -78,6 +108,8 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 ## libKitsunemimiJson
 
+#### Metadata
+
 - **content**: Parser for the content of json-files.
 
 - **current version**: `0.10.3`
@@ -91,8 +123,6 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJson.git
-
-### Requirements
 
 #### Required build tools
 
@@ -114,6 +144,8 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 ## libKitsunemimiIni
 
+#### Metadata
+
 - **content**: Parser for the content of ini-files.
 
 - **current version**: `0.4.4`
@@ -127,8 +159,6 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiIni.git
-
-### Requirements
 
 #### Required build tools
 
@@ -150,6 +180,8 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 ## libKitsunemimiJinja2
 
+#### Metadata
+
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
 - **current version**: `0.7.3`
@@ -163,8 +195,6 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-
-### Requirements
 
 #### Required build tools
 
@@ -187,6 +217,8 @@ libKitsunemimiJson | v0.10.3 |  https://github.com/kitsudaiki/libKitsunemimiJson
 
 ## libKitsunemimiNetwork
 
+#### Metadata
+
 - **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
 
 - **current version**: `0.6.4`
@@ -200,8 +232,6 @@ libKitsunemimiJson | v0.10.3 |  https://github.com/kitsudaiki/libKitsunemimiJson
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-
-### Requirements
 
 #### Required build tools
 
@@ -227,6 +257,8 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 ## libKitsunemimiArgs
 
+#### Metadata
+
 - **content**: Small and easy to use parser for CLI-arguments.
 
 - **current version**: `0.2.0`
@@ -240,8 +272,6 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
-
-### Requirements
 
 #### Required build tools
 
@@ -266,6 +296,8 @@ libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemi
 
 ## libKitsunemimiConfig
 
+#### Metadata
+
 - **content**: Parser for cli-arguments.
 
 - **current version**: `0.2.3`
@@ -279,8 +311,6 @@ libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemi
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
-
-### Requirements
 
 #### Required build tools
 
@@ -308,6 +338,8 @@ libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 ## libKitsunemimiProjectNetwork
 
+#### Metadata
+
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
 - **current version**: `0.2.0`
@@ -321,8 +353,6 @@ libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 - **location**: `Github`
 
 - **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-
-### Requirements
 
 #### Required build tools
 
@@ -347,6 +377,8 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 
 ## libKitsunemimiSakuraLang
+
+#### Metadata
 
 - **content**: This is the parser-library for SakuraTree (https://github.com/kitsudaiki/SakuraTree) to parse all project-specific files.
 
@@ -385,6 +417,8 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 
 ## libKitsunemimiSakuraNetwork
+
+#### Metadata
 
 - **content**: The network-library for SakuraTree (https://github.com/kitsudaiki/SakuraTree) to connect all components and transfer commands and files.
 
@@ -428,6 +462,8 @@ libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimi
 
 
 ## SakuraTree
+
+#### Metadata
 
 - **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
