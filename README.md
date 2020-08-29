@@ -1,10 +1,16 @@
-# Kitsunemimi-Projects-Meta
+# Kitsunemimi-Project-Meta
 
-This repository is only to keep an overview of my repositories. With this the version of library requirements should be in sync and this project is for issue tickets, which affect all repositories.
+This repository is only to keep an overview of my public and private repositories. With this the version of library requirements should be in sync and this project is for issue tickets, which affect all repositories.
+
+For the case that you ask, why it is named `Kitsunemimi-Project`: Its is not related to the content of the repositories. Originally I searched for a name schema for the libraries to differentiation them from other libraries. For this and because my private domain was already `kitsunemimi.moe`, I decided to name my libraries `libKitsunemimi...` and after some time I decided to make this as to the project name and collect all my sub-projects under this name, because kitsunemimi are moe. ;) 
 
 ## Overview
 
 ### Sakura-Project
+
+The Sakura-Project provides an automation tool to deploy applications, similar like ansible, but with higher performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this to automate different tasks on my deployment at home.
+
+See documentation of the latest master-version: [Sakura-Project-Documentation.pdf](https://gitlab.com/kitsudaiki/Sakura-Project-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, to I will bring the documentation up-to-date in the next weeks.)
 
 [SakuraTree](#SakuraTree)
 
@@ -12,11 +18,35 @@ This repository is only to keep an overview of my repositories. With this the ve
 
 [libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
 
+### Kyouko-Project (still private)
+
+This is the main-project here, but it is still far away to be usable for any task, so its still private. In the core it provides an artificial neural network based on a concept created by myself. 
+
+[KyoukoMind](#KyoukoMind)
+
+[ToriiGateway](#ToriiGateway)
+
+[MiyuMonitoring](#MiyuMonitoring)
+
+[MiraiControl](#MiraiControl)
+
+[libKitsunemimiKyoukoCommon](#libKitsunemimiKyoukoCommon)
+
 ### generic project libraries
+
+Libraries for common usage inside of the Kitsunemimi-Project. 
 
 [libKitsunemimiProjectNetwork](#libKitsunemimiProjectNetwork)
 
 ### generic libraries
+
+These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, that I really need.
+
+[libKitsunemimiOpengl](#libKitsunemimiOpengl)
+
+[libKitsunemimiObj](#libKitsunemimiObj)
+
+[libKitsunemimiOpencl](#libKitsunemimiOpencl)
 
 [libKitsunemimiConfig](#libKitsunemimiConfig)
 
@@ -49,7 +79,7 @@ This repository is only to keep an overview of my repositories. With this the ve
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -77,7 +107,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -118,7 +148,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -154,7 +184,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -190,7 +220,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -227,7 +257,7 @@ libKitsunemimiJson | v0.10.3 |  https://github.com/kitsudaiki/libKitsunemimiJson
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -243,6 +273,8 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
@@ -267,7 +299,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -283,6 +315,8 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 
 #### Required kitsunemimi libraries
@@ -306,7 +340,7 @@ libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -324,6 +358,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 
 #### Required kitsunemimi libraries
@@ -334,6 +370,127 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
+
+## libKitsunemimiObj
+
+#### Metadata
+
+- **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
+
+- **current version**: `0.2.3`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiObj.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+
+## libKitsunemimiOpencl
+
+#### Metadata
+
+- **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
+
+- **current version**: `0.1.0`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+opencl-headers  | opencl-headers | 2.x | Header-files for opencl
+ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+
+## libKitsunemimiOpengl
+
+#### Metadata
+
+- **content**: Simple wrapper-library for some commonly used OpenGL-functionallities.
+
+- **current version**: -
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiOpengl.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+libglew-dev  | libglew-dev | 2.x | -
+libsdl2-dev | libsdl2-dev | 2.x | -
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 ## libKitsunemimiProjectNetwork
@@ -348,7 +505,7 @@ libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -364,6 +521,8 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
@@ -388,7 +547,7 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -406,6 +565,8 @@ GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 
 #### Required kitsunemimi libraries
@@ -428,7 +589,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -446,6 +607,8 @@ GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
@@ -473,7 +636,7 @@ libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimi
 
 - **language**: `C++14`
 
-- **state**: `public`
+- **visibility**: `public`
 
 - **location**: `Github`
 
@@ -492,6 +655,8 @@ xxd | xxd | >= 1.10 | converts text files into source code files
 
 #### Required generic libraries
 
+name | repository | version | task
+--- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
@@ -511,3 +676,219 @@ libKitsunemimiProjectNetwork | v0.2.0 | https://github.com/kitsudaiki/libKitsune
 libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiSakuraNetwork | v0.1.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
+
+## libKitsunemimiKyoukoCommon
+
+#### Metadata
+
+- **content**: Common library for the components of the Kyouko-Project. Primary packet definitions for network-communication between the components.
+
+- **current version**: `-`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+- **repo-pth**: git@gitlab.kitsunemimi.moe:kitsudaiki/libKitsunemimiKyoukoCommon.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+
+## KyoukoMind
+
+#### Metadata
+
+- **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynaic than the commonly used deep-learning networks.
+
+- **additional commentary**: Even the concept is already in progress for some years, it is still at the beginning and had only reached the first primitiv proof-of-concept. The first version had a very high dynamic, which provided many fancy possebilities, but it had really bad performance and was not capable to perform on a GPU. So at the moment I try to bring it working again with a reduced version of the concept and am on the way to the second PoC, but there it is possible that it failes and I have to cancel this project.
+
+- **current version**: `0.1.0` (first PoC)
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/KyoukoMind.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+xxd | xxd | >= 1.10 | converts text files into source code files
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | master | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiIni | master | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiOpencl | master| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+libKitsunemimiObj | master| https://github.com/kitsudaiki/libKitsunemimiObj.git
+libKitsunemimiProjectNetwork | master| https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+
+
+
+## MiyuMonitoring
+
+#### Metadata
+
+- **content**: Proxy for networking communication between the components.
+
+- **current version**: -
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiyuMonitoring.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+
+
+## MiyuMonitoring
+
+#### Metadata
+
+- **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
+
+- **current version**: -
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiyuMonitoring.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+
+- QT 5 with QML
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+
+
+## MiraiControl
+
+#### Metadata
+
+- **content**: Controlling client to interact with a KyoukoMind-instance.
+
+- **current version**: -
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiraiControl.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
