@@ -699,8 +699,6 @@ libKitsunemimiSakuraNetwork | v0.1.0 | https://github.com/kitsudaiki/libKitsunem
 
 - **location**: `self-hosted Gitlab`
 
-- **repo-pth**: git@gitlab.kitsunemimi.moe:kitsudaiki/libKitsunemimiKyoukoCommon.git
-
 #### required tools to build
 
 name | repository | version | task
@@ -731,8 +729,6 @@ libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiComm
 - **visibility**: `private`
 
 - **location**: `self-hosted Gitlab`
-
-- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/KyoukoMind.git
 
 #### required tools to build
 
@@ -766,7 +762,7 @@ libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNet
 libKitsunemimiOpencl | master| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
 libKitsunemimiObj | master| https://github.com/kitsudaiki/libKitsunemimiObj.git
 libKitsunemimiProjectNetwork | master| https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+libKitsunemimiKyoukoCommon | master | -
 
 
 
@@ -783,8 +779,6 @@ libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/l
 - **visibility**: `private`
 
 - **location**: `self-hosted Gitlab`
-
-- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiyuMonitoring.git
 
 #### required tools to build
 
@@ -810,7 +804,7 @@ libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemim
 libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+libKitsunemimiKyoukoCommon | master | -
 
 
 ## MiyuMonitoring
@@ -826,8 +820,6 @@ libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/l
 - **visibility**: `private`
 
 - **location**: `self-hosted Gitlab`
-
-- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiyuMonitoring.git
 
 #### required tools to build
 
@@ -853,7 +845,7 @@ libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiComm
 libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+libKitsunemimiKyoukoCommon | master | -
 
 
 ## MiraiControl
@@ -869,8 +861,6 @@ libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/l
 - **visibility**: `private`
 
 - **location**: `self-hosted Gitlab`
-
-- **repo-pth**: http://gitlab.kitsunemimi.moe/kitsudaiki/MiraiControl.git
 
 #### required tools to build
 
@@ -899,4 +889,4 @@ libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.g
 libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiKyoukoCommon | master | http://gitlab.kitsunemimi.moe/kitsudaiki/libKitsunemimiKyoukoCommon.git
+libKitsunemimiKyoukoCommon | master | -
