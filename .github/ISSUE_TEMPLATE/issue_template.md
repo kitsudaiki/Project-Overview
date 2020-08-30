@@ -19,7 +19,13 @@ about: Generic update task, which affect all repositories
 - [ ] libKitsunemimiArgs
 - [ ] libKitsunemimiOpencl
 - [ ] libKitsunemimiObj
+- [ ] libKitsunemimiOpengl
 - [ ] libKitsunemimiProjectNetwork
 - [ ] libKitsunemimiSakuraNetwork
 - [ ] libKitsunemimiSakuraParser
 - [ ] SakuraTree
+- [ ] libKitsunemimiKyoukoCommon
+- [ ] MiraiControl
+- [ ] MiyuMonitoring
+- [ ] ToriiGateway
+- [ ] KyoukoMind
