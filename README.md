@@ -6,6 +6,10 @@ For the case that you ask, why it is named `Kitsunemimi-Project`: Its is not rel
 
 ## Overview
 
+<p align="center">
+  <img src=".pictures/overview.png?raw=true" alt="Overview"/>
+</p>
+
 ### Sakura-Project
 
 The Sakura-Project provides an automation tool to deploy applications, similar like ansible, but with higher performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this to automate different tasks on my deployment at home.
