@@ -766,7 +766,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 
 
-## MiyuMonitoring
+## ToriiGateway
 
 #### Metadata
 
