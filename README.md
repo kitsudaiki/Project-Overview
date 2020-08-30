@@ -1,10 +1,14 @@
 # Kitsunemimi-Project-Meta
 
-This repository is only to keep an overview of my public and private repositories. With this the version of library requirements should be in sync and this project is for issue tickets, which affect all repositories.
+This repository is only to keep an overview of my public and private repositories. With this the version of library requirements should be in sync. Beside this it is for issue tickets, which affect all repositories.
 
 For the case that you ask, why it is named `Kitsunemimi-Project`: Its is not related to the content of the repositories. Originally I searched for a name schema for the libraries to differentiation them from other libraries. For this and because my private domain was already `kitsunemimi.moe`, I decided to name my libraries `libKitsunemimi...` and after some time I decided to make this as to the project name and collect all my sub-projects under this name, because kitsunemimi are moe. ;) 
 
+Contact for questions: tobias.anker@kitsunemimi.moe
+
 ## Overview
+
+The following diagramm shows the relations of the library and tools with each other. I know its not a vaild UML-diagramm, but I wanted to reduce the complexety to keep it a bit smaller. 
 
 <p align="center">
   <img src=".pictures/overview.png?raw=true" alt="Overview"/>
@@ -12,9 +16,9 @@ For the case that you ask, why it is named `Kitsunemimi-Project`: Its is not rel
 
 ### Sakura-Project
 
-The Sakura-Project provides an automation tool to deploy applications, similar like ansible, but with higher performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this to automate different tasks on my deployment at home.
+The Sakura-Project provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
 
-See documentation of the latest master-version: [Sakura-Project-Documentation.pdf](https://gitlab.com/kitsudaiki/Sakura-Project-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, to I will bring the documentation up-to-date in the next weeks.)
+See documentation of the latest master-version: [Sakura-Project-Documentation.pdf](https://gitlab.com/kitsudaiki/Sakura-Project-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, so I will bring the documentation up-to-date in the next weeks.)
 
 [SakuraTree](#SakuraTree)
 
@@ -44,7 +48,7 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 ### generic libraries
 
-These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, that I really need.
+These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
 
 [libKitsunemimiOpengl](#libKitsunemimiOpengl)
 
@@ -718,7 +722,7 @@ libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiComm
 
 - **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynaic than the commonly used deep-learning networks.
 
-- **additional commentary**: Even the concept is already in progress for some years, it is still at the beginning and had only reached the first primitiv proof-of-concept. The first version had a very high dynamic, which provided many fancy possebilities, but it had really bad performance and was not capable to perform on a GPU. So at the moment I try to bring it working again with a reduced version of the concept and am on the way to the second PoC, but there it is possible that it failes and I have to cancel this project.
+- **additional commentary**: Even the concept is already in progress for some years, it is still at the beginning and had only reached the first primitiv proof-of-concept. The first version had a very high dynamic, which provided many fancy possibilities, but it had really bad performance and was not capable to perform on a GPU. So at the moment I try to bring it working again with a reduced version of the concept and am on the way to the second PoC, but there it is possible that it failes and I have to cancel this project.
 
 - **current version**: `0.1.0` (first PoC)
 
