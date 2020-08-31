@@ -385,7 +385,7 @@ libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 - **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
 
-- **current version**: `0.2.3`
+- **current version**: `0.1.1`
 
 - **license**: `MIT`
 
@@ -415,8 +415,8 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.13.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 
 ## libKitsunemimiOpencl
