@@ -501,7 +501,7 @@ libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCom
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.2.0`
+- **current version**: `0.3.0`
 
 - **license**: `Apache 2`
 
