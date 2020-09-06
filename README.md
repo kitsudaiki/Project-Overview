@@ -14,19 +14,11 @@ The following diagramm shows the relations of the library and tools with each ot
   <img src=".pictures/overview.png?raw=true" alt="Overview"/>
 </p>
 
-### Sakura-Project
-
-The Sakura-Project provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
-
-See documentation of the latest master-version: [Sakura-Project-Documentation.pdf](https://gitlab.com/kitsudaiki/Sakura-Project-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, so I will bring the documentation up-to-date in the next weeks.)
+### Side-Projects
 
 [SakuraTree](#SakuraTree)
 
-[libKitsunemimiSakuraNetwork](#libKitsunemimiSakuraNetwork)
-
-[libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
-
-### Kyouko-Project (still private)
+### Main-Project (still private)
 
 This is the main-project here, but it is still far away to be usable for any task, so its still private. In the core it provides an artificial neural network based on a concept created by myself. 
 
@@ -44,7 +36,9 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 Libraries for common usage inside of the Kitsunemimi-Project. 
 
-[libKitsunemimiProjectNetwork](#libKitsunemimiProjectNetwork)
+[libKitsunemimiSakuraNetwork](#libKitsunemimiSakuraNetwork)
+
+[libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
 
 ### generic libraries
 
@@ -501,7 +495,7 @@ Repository-Name | Version-Tag | Download-Path
 libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
-## libKitsunemimiProjectNetwork
+## libKitsunemimiSakuraNetwork
 
 #### Metadata
 
@@ -517,7 +511,7 @@ libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCom
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 #### Required build tools
 
@@ -547,9 +541,9 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 #### Metadata
 
-- **content**: This is the parser-library for SakuraTree (https://github.com/kitsudaiki/SakuraTree) to parse all project-specific files.
+- **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.3.1`
+- **current version**: `0.4.0`
 
 - **license**: `Apache 2`
 
@@ -583,62 +577,21 @@ Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-
-## libKitsunemimiSakuraNetwork
-
-#### Metadata
-
-- **content**: The network-library for SakuraTree (https://github.com/kitsudaiki/SakuraTree) to connect all components and transfer commands and files.
-
-- **current version**: `0.1.0`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-
-#### required tools to build
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiProjectNetwork | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-
+libKitsunemimiJson | v0.10.3 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.7.3 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
 
 ## SakuraTree
+
+SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
+
+See documentation of the latest master-version: [SakuraTree-Documentation.pdf](https://gitlab.com/kitsudaiki/SakuraTree-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, so I will bring the documentation up-to-date in the next weeks.)
 
 #### Metadata
 
 - **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
-- **current version**: `0.3.0-ff`
+- **current version**: `0.3.0-ff3`
 
 - **license**: `Apache 2`
 
@@ -680,9 +633,8 @@ libKitsunemimiJson | v0.10.3 | https://github.com/kitsudaiki/libKitsunemimiJson.
 libKitsunemimiJinja2 | v0.7.3 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiProjectNetwork | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiSakuraNetwork | v0.1.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraLang | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 
 ## libKitsunemimiKyoukoCommon
@@ -890,3 +842,4 @@ libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.g
 libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
 libKitsunemimiKyoukoCommon | master | -
+
