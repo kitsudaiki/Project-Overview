@@ -591,7 +591,7 @@ See documentation of the latest master-version: [SakuraTree-Documentation.pdf](h
 
 - **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
-- **current version**: `0.3.0-ff3`
+- **current version**: `0.3.0`
 
 - **license**: `Apache 2`
 
@@ -633,8 +633,8 @@ libKitsunemimiJson | v0.10.3 | https://github.com/kitsudaiki/libKitsunemimiJson.
 libKitsunemimiJinja2 | v0.7.3 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraLang | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiProjectNetwork | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
 
 
 ## libKitsunemimiKyoukoCommon
