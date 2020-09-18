@@ -144,7 +144,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.3`
+- **current version**: `0.10.4`
 
 - **license**: `MIT`
 
@@ -180,7 +180,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.4`
+- **current version**: `0.4.5`
 
 - **license**: `MIT`
 
@@ -216,7 +216,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
-- **current version**: `0.7.3`
+- **current version**: `0.8.0`
 
 - **license**: `MIT`
 
@@ -243,7 +243,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJson | v0.10.4 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 
 
