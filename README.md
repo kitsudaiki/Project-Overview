@@ -665,6 +665,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJinja2 | master | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiOpengl | master | - 
 libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
