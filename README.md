@@ -85,7 +85,7 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 #### Required build tools
 
@@ -113,7 +113,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 #### Required build tools
 
@@ -154,7 +154,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJson.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 #### Required build tools
 
@@ -190,7 +190,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiIni.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 #### Required build tools
 
@@ -226,7 +226,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
 #### Required build tools
 
@@ -263,7 +263,7 @@ libKitsunemimiJson | v0.10.4 |  https://github.com/kitsudaiki/libKitsunemimiJson
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
 #### Required build tools
 
@@ -305,7 +305,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
 
 #### Required build tools
 
@@ -346,7 +346,7 @@ libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
 
 #### Required build tools
 
@@ -389,7 +389,7 @@ libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiObj.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiObj.git
 
 #### Required build tools
 
@@ -429,7 +429,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiOpencl.git
 
 #### Required build tools
 
@@ -471,7 +471,7 @@ libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemim
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiOpengl.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiOpengl.git
 
 #### Required build tools
 
@@ -511,7 +511,7 @@ libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCom
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 #### Required build tools
 
@@ -553,7 +553,7 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 #### required tools to build
 
@@ -601,7 +601,7 @@ See documentation of the latest master-version: [SakuraTree-Documentation.pdf](h
 
 - **location**: `Github`
 
-- **repo-pth**: https://github.com/kitsudaiki/SakuraTree.git
+- **repo-path**: https://github.com/kitsudaiki/SakuraTree.git
 
 #### required tools to build
 
