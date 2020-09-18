@@ -40,6 +40,10 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 [libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
 
+[libKitsunemimiSakuraMessaging](#libKitsunemimiSakuraMessaging)
+
+[libKitsunemimiSakuraGui](#libKitsunemimiSakuraGui)
+
 ### generic libraries
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
@@ -471,8 +475,6 @@ libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemim
 
 - **location**: `Github`
 
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiOpengl.git
-
 #### Required build tools
 
 name | repository | version | task
@@ -536,7 +538,6 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
-
 ## libKitsunemimiSakuraLang
 
 #### Metadata
@@ -579,6 +580,92 @@ libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCom
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJson | v0.10.3 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.7.3 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+
+## libKitsunemimiSakuraMessaging
+
+#### Metadata
+
+- **content**: Additional application-layer of the project related network stack.
+
+- **current version**: `-`
+
+- **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJinja2 | master | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | master | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiConfig | master | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | master | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+
+
+## libKitsunemimiSakuraGui
+
+#### Metadata
+
+- **content**: Create a graphical user interface in opengl based on the description coming from the sakura-language library.
+
+- **current version**: `-`
+
+- **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJinja2 | master | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
 ## SakuraTree
