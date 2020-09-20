@@ -18,6 +18,8 @@ The following diagramm shows the relations of the library and tools with each ot
 
 [SakuraTree](#SakuraTree)
 
+Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_0.pdf
+
 ### Main-Project (still private)
 
 This is the main-project here, but it is still far away to be usable for any task, so its still private. In the core it provides an artificial neural network based on a concept created by myself. 
@@ -673,13 +675,13 @@ libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimi
 
 SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
 
-See documentation of the latest master-version: [SakuraTree-Documentation.pdf](https://gitlab.com/kitsudaiki/SakuraTree-Documentation/builds/artifacts/master/browse?job=build) (this documentation is fall behind the implemetation at the moment, because I have only a very limited amount of time available for my private projects. Sorry :( But SakuraTree reached now the feature-freeze for version 0.3.0, so I will bring the documentation up-to-date in the next weeks.)
+Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_0.pdf
 
 #### Metadata
 
 - **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
-- **current version**: `0.3.0`
+- **current version**: `0.4.0`
 
 - **license**: `Apache 2`
 
@@ -700,14 +702,12 @@ make | make | >= 4.0 | process the make-file, which is created by qmake to build
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
 GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-xxd | xxd | >= 1.10 | converts text files into source code files
 
 #### Required generic libraries
 
 name | repository | version | task
 --- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 #### Required kitsunemimi libraries
 
@@ -716,13 +716,10 @@ Repository-Name | Version-Tag | Download-Path
 libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiArgs | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiJson | v0.10.3 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.7.3 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraLang | v0.3.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiProjectNetwork | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiSakuraLang | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
 ## libKitsunemimiKyoukoCommon
