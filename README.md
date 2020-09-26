@@ -18,7 +18,7 @@ The following diagramm shows the relations of the library and tools with each ot
 
 [SakuraTree](#SakuraTree)
 
-Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_0.pdf
+Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
 ### Main-Project (still private)
 
@@ -301,7 +301,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **content**: Small and easy to use parser for CLI-arguments.
 
-- **current version**: `0.2.0`
+- **current version**: `0.2.1`
 
 - **license**: `MIT`
 
@@ -546,7 +546,7 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 - **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.5.0`
+- **current version**: `0.5.1`
 
 - **license**: `Apache 2`
 
@@ -675,13 +675,13 @@ libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimi
 
 SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
 
-Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_0.pdf
+Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
 #### Metadata
 
 - **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
-- **current version**: `0.4.0`
+- **current version**: `0.4.1`
 
 - **license**: `Apache 2`
 
@@ -715,11 +715,11 @@ Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiArgs | v0.2.0 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiSakuraLang | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
 ## libKitsunemimiKyoukoCommon
