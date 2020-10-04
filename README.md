@@ -893,9 +893,11 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **content**: Controlling client to interact with a KyoukoMind-instance.
 
+- **additional commentary**: Originally this was planned as c++ project like every other component in this project, but I also wanted to learn `go` programming and this component is only a cli tool to interact over https with the backend and so it can be easily separated and doesn't need anyone of my libraries. Because of this it is good use-case and first small project for me to learn `go`.
+
 - **current version**: -
 
-- **language**: `C++14`
+- **language**: `go`
 
 - **visibility**: `private`
 
@@ -905,28 +907,6 @@ libKitsunemimiKyoukoCommon | master | -
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+go | golang | >= 1.7 | Compiler for the go code.
 
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
-libKitsunemimiKyoukoCommon | master | -
 
