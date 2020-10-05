@@ -186,7 +186,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.5`
+- **current version**: `0.4.6`
 
 - **license**: `MIT`
 
@@ -624,7 +624,7 @@ libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCo
 libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
