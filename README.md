@@ -546,7 +546,7 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 
 - **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.5.1`
+- **current version**: `0.6.0`
 
 - **license**: `Apache 2`
 
@@ -589,7 +589,7 @@ libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinj
 
 - **content**: Additional application-layer of the project related network stack.
 
-- **current version**: `-`
+- **current version**: `0.1.0`
 
 - **license**: `Apache 2`
 
@@ -626,7 +626,7 @@ libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.
 libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiSakuraLang | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
