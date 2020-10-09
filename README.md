@@ -826,6 +826,8 @@ name | repository | version | task
 g++ | g++ | >= 6.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
 #### Required generic libraries
 
@@ -833,16 +835,23 @@ name | repository | version | task
 --- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
+cpprest | libcpprest-dev | 2.9.x | provides a REST-API
 
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraMessaging | v0.1.0 | -
 libKitsunemimiKyoukoCommon | master | -
 
 
