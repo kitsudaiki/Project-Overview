@@ -750,7 +750,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 ## KyoukoMind
@@ -791,18 +791,20 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiArgs | master | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | master | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiIni | master | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
 libKitsunemimiOpencl | master| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
-libKitsunemimiObj | master| https://github.com/kitsudaiki/libKitsunemimiObj.git
-libKitsunemimiProjectNetwork | master| https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiSakuraMessaging | v0.2.0 | -
 libKitsunemimiKyoukoCommon | master | -
-
 
 
 ## ToriiGateway
@@ -848,10 +850,10 @@ libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinj
 libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiSakuraLang | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraMessaging | v0.1.0 | -
+libKitsunemimiSakuraMessaging | v0.2.0 | -
 libKitsunemimiKyoukoCommon | master | -
 
 
@@ -889,10 +891,17 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | master | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | master | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiProjectNetwork | master | https://github.com/kitsudaiki/libKitsunemimiProjectNetwork.git
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraMessaging | v0.2.0 | -
 libKitsunemimiKyoukoCommon | master | -
 
 
