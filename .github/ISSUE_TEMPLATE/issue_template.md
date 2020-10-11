@@ -24,9 +24,7 @@ about: Generic update task, which affect all repositories
 - [ ] libKitsunemimiSakuraLang
 - [ ] libKitsunemimiSakuraMessaging
 - [ ] libKitsunemimiSakuraGui
-
 - [ ] SakuraTree
-
 - [ ] libKitsunemimiKyoukoCommon
 - [ ] MiraiControl
 - [ ] MiyuMonitoring
