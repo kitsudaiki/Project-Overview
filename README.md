@@ -30,6 +30,8 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [MiyuMonitoring](#MiyuMonitoring)
 
+[MikoClient](#MikoClient)
+
 [MiraiControl](#MiraiControl)
 
 [libKitsunemimiKyoukoCommon](#libKitsunemimiKyoukoCommon)
@@ -44,13 +46,9 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 [libKitsunemimiSakuraMessaging](#libKitsunemimiSakuraMessaging)
 
-[libKitsunemimiSakuraGui](#libKitsunemimiSakuraGui)
-
 ### generic libraries
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
-
-[libKitsunemimiOpengl](#libKitsunemimiOpengl)
 
 [libKitsunemimiObj](#libKitsunemimiObj)
 
@@ -461,44 +459,6 @@ libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCom
 libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 
-## libKitsunemimiOpengl
-
-#### Metadata
-
-- **content**: Simple wrapper-library for some commonly used OpenGL-functionallities.
-
-- **current version**: -
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-libglew-dev  | libglew-dev | 2.x | -
-libsdl2-dev | libsdl2-dev | 2.x | -
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-
 ## libKitsunemimiSakuraNetwork
 
 #### Metadata
@@ -629,48 +589,6 @@ libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConf
 libKitsunemimiSakuraLang | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-
-
-## libKitsunemimiSakuraGui
-
-#### Metadata
-
-- **content**: Create a graphical user interface in opengl based on the description coming from the sakura-language library.
-
-- **current version**: `-`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJinja2 | master | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiOpengl | master | - 
-libKitsunemimiSakuraLang | master | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
 ## SakuraTree
@@ -836,8 +754,8 @@ GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 name | repository | version | task
 --- | --- | --- | ---
 boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+boost-beast library | (compiled form source) | 1.7x | provides http-server and websocket-server
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
-cpprest | libcpprest-dev | 2.9.x | provides a REST-API
 
 #### Required kitsunemimi libraries
 
@@ -865,53 +783,42 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **current version**: -
 
-- **language**: `C++14`
+- **language**: `JavaScript + HTML`
 
 - **visibility**: `private`
 
 - **location**: `self-hosted Gitlab`
 
-#### required tools to build
+#### Required packages
 
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+- d3
+- booststrap
 
-- QT 5 with QML
 
-#### Required generic libraries
+## MikoClient
 
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
+#### Metadata
 
-#### Required kitsunemimi libraries
+- **content**: Client to directly interact with the KyoukoMind-instance.
 
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.2 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraMessaging | v0.2.1 | -
-libKitsunemimiKyoukoCommon | master | -
+- **current version**: -
+
+- **language**: `JavaScript + HTML`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+#### Required packages
+
+- booststrap
 
 
 ## MiraiControl
 
 #### Metadata
 
-- **content**: Controlling client to interact with a KyoukoMind-instance.
-
-- **additional commentary**: Originally this was planned as c++ project like every other component in this project, but I also wanted to learn `go` programming and this component is only a cli tool to interact over https with the backend and so it can be easily separated and doesn't need anyone of my libraries. Because of this it is good use-case and first small project for me to learn `go`.
+- **content**: Controlling client to interact with a backend to check and set configurations.
 
 - **current version**: -
 
@@ -926,5 +833,3 @@ libKitsunemimiKyoukoCommon | master | -
 name | repository | version | task
 --- | --- | --- | ---
 go | golang | >= 1.7 | Compiler for the go code.
-
-
