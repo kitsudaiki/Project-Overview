@@ -16,7 +16,7 @@ The following diagramm shows the relations of the library and tools with each ot
 
 ### Side-Projects
 
-[SakuraTree](#SakuraTree)
+[SakuraTree](#SakuraTree) (paused)
 
 Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
@@ -593,6 +593,8 @@ libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunem
 
 ## SakuraTree
 
+(This project is actually paused.)
+
 SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
 
 Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
@@ -791,7 +793,6 @@ libKitsunemimiKyoukoCommon | master | -
 
 #### Required packages
 
-- d3
 - booststrap
 
 
