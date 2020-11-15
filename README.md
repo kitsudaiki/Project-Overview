@@ -789,7 +789,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **visibility**: `private`
 
-- **location**: `self-hosted Gitlab`
+- **location**: `Github`
 
 #### Required packages
 
@@ -808,7 +808,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **visibility**: `private`
 
-- **location**: `self-hosted Gitlab`
+- **location**: `Github`
 
 #### Required packages
 
@@ -827,7 +827,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **visibility**: `private`
 
-- **location**: `self-hosted Gitlab`
+- **location**: `Github`
 
 #### required tools to build
 
