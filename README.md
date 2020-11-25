@@ -79,7 +79,7 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.15.2`
+- **current version**: `0.16.0`
 
 - **license**: `MIT`
 
