@@ -46,6 +46,8 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 [libKitsunemimiSakuraMessaging](#libKitsunemimiSakuraMessaging)
 
+[libKitsunemimiSakuraGui](#libKitsunemimiSakuraGui)
+
 ### generic libraries
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
@@ -591,6 +593,21 @@ libKitsunemimiNetwork | v0.6.4 | https://github.com/kitsudaiki/libKitsunemimiNet
 libKitsunemimiSakuraNetwork | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 
+## libKitsunemimiSakuraGui
+
+#### Metadata
+
+- **content**: Commonly used web-gui elements.
+
+- **current version**: -
+
+- **language**: `JavaScript + HTML`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+
 ## SakuraTree
 
 (This project is actually paused.)
@@ -791,6 +808,12 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **location**: `Github`
 
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiSakuraGui | master | -
+
 #### Required packages
 
 - booststrap
@@ -809,6 +832,12 @@ libKitsunemimiKyoukoCommon | master | -
 - **visibility**: `private`
 
 - **location**: `Github`
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiSakuraGui | master | -
 
 #### Required packages
 
