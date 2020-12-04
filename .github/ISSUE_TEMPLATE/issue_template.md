@@ -1,6 +1,7 @@
 ---
 name: update template
 about: Generic update task, which affect all repositories
+labels: Meta-Issue
 ---
 
 ## Update
@@ -19,7 +20,6 @@ about: Generic update task, which affect all repositories
 - [ ] libKitsunemimiArgs
 - [ ] libKitsunemimiOpencl
 - [ ] libKitsunemimiObj
-- [ ] libKitsunemimiOpengl
 - [ ] libKitsunemimiSakuraNetwork
 - [ ] libKitsunemimiSakuraLang
 - [ ] libKitsunemimiSakuraMessaging
