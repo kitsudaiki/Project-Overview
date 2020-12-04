@@ -28,5 +28,6 @@ labels: Meta-Issue
 - [ ] libKitsunemimiKyoukoCommon
 - [ ] MiraiControl
 - [ ] MiyuMonitoring
+- [ ] MikoClient
 - [ ] ToriiGateway
 - [ ] KyoukoMind
