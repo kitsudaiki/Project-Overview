@@ -749,7 +749,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `C++14`
 
