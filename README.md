@@ -457,8 +457,8 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | master |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | master | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 
 ## libKitsunemimiSakuraNetwork
@@ -739,7 +739,7 @@ libKitsunemimiSakuraLang | v0.7.1 | https://github.com/kitsudaiki/libKitsunemimi
 libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
-libKitsunemimiOpencl | master| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+libKitsunemimiOpencl | v0.1.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
 libKitsunemimiSakuraMessaging | v0.3.0 | -
 libKitsunemimiKyoukoCommon | master | -
 
