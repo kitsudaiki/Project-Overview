@@ -467,7 +467,7 @@ libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemi
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.4.0`
+- **current version**: `0.5.0`
 
 - **license**: `Apache 2`
 
@@ -551,7 +551,7 @@ libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinj
 
 - **content**: Additional application-layer of the project related network stack.
 
-- **current version**: `0.3.0`
+- **current version**: `0.4.0`
 
 - **license**: `Apache 2`
 
@@ -590,7 +590,7 @@ libKitsunemimiIni | v0.4.6 |  https://github.com/kitsudaiki/libKitsunemimiIni.gi
 libKitsunemimiConfig | v0.2.3 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiSakuraLang | v0.7.1 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.5 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraNetwork | v0.5.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 
 ## libKitsunemimiSakuraGui
@@ -737,10 +737,10 @@ libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.g
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiSakuraLang | v0.7.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
 libKitsunemimiOpencl | v0.1.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
-libKitsunemimiSakuraMessaging | v0.3.0 | -
+libKitsunemimiSakuraMessaging | v0.4.0 | -
 libKitsunemimiKyoukoCommon | master | -
 
 ## ToriiGateway
@@ -749,7 +749,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.1.1`
+- **current version**: `0.1.2`
 
 - **language**: `C++14`
 
@@ -788,8 +788,8 @@ libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.g
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiSakuraLang | v0.7.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraMessaging | v0.3.0 | -
+libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraMessaging | v0.4.0 | -
 
 
 ## MiyuMonitoring
