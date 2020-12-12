@@ -599,9 +599,9 @@ libKitsunemimiSakuraNetwork | v0.5.0 |  https://github.com/kitsudaiki/libKitsune
 
 - **content**: Commonly used web-gui elements.
 
-- **current version**: -
+- **current version**: `0.1.0`
 
-- **language**: `JavaScript + HTML`
+- **language**: `JavaScript + CSS`
 
 - **visibility**: `private`
 
@@ -749,7 +749,7 @@ libKitsunemimiKyoukoCommon | master | -
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.1.2`
+- **current version**: `0.1.3`
 
 - **language**: `C++14`
 
@@ -798,23 +798,25 @@ libKitsunemimiSakuraMessaging | v0.4.0 | -
 
 - **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
 
-- **current version**: -
+- **current version**: `0.1.0`
 
-- **language**: `JavaScript + HTML`
+- **language**: `JavaScript + HTML + CSS`
 
 - **visibility**: `private`
 
 - **location**: `Github`
 
-#### Required kitsunemimi libraries
+#### required official libraries
+
+repository-name | version | task
+--- | --- | ---
+bootstrap | 4.5.3 | styling for basic objects like tables
+
+#### Kitsunemimi-repositories
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiSakuraGui | master | -
-
-#### Required packages
-
-- booststrap
+libKitsunemimiSakuraGui | v0.1.0 | -
 
 
 ## MikoClient
@@ -825,22 +827,23 @@ libKitsunemimiSakuraGui | master | -
 
 - **current version**: -
 
-- **language**: `JavaScript + HTML`
+- **language**: `JavaScript + HTML + CSS`
 
 - **visibility**: `private`
 
 - **location**: `Github`
 
-#### Required kitsunemimi libraries
+#### required official libraries
+
+repository-name | version | task
+--- | --- | ---
+bootstrap | 4.5.3 | styling for basic objects like tables
+
+#### Kitsunemimi-repositories
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiSakuraGui | master | -
-
-#### Required packages
-
-- booststrap
-
+libKitsunemimiSakuraGui | v0.1.0 | -
 
 ## MiraiControl
 
