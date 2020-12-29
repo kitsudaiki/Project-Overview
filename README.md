@@ -34,8 +34,6 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [MiraiControl](#MiraiControl)
 
-[libKitsunemimiKyoukoCommon](#libKitsunemimiKyoukoCommon)
-
 ### generic project libraries
 
 Libraries for common usage inside of the Kitsunemimi-Project. 
@@ -661,44 +659,15 @@ libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 
 
-## libKitsunemimiKyoukoCommon
-
-#### Metadata
-
-- **content**: Common library for the components of the Kyouko-Project. Primary packet definitions for network-communication between the components.
-
-- **current version**: `-`
-
-- **language**: `C++14`
-
-- **visibility**: `private`
-
-- **location**: `self-hosted Gitlab`
-
-#### required tools to build
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.2 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-
 ## KyoukoMind
 
 #### Metadata
 
-- **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynaic than the commonly used deep-learning networks.
+- **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynamic than the commonly used deep-learning networks.
 
-- **additional commentary**: Even the concept is already in progress for some years, it is still at the beginning and had only reached the first primitiv proof-of-concept. The first version had a very high dynamic, which provided many fancy possibilities, but it had really bad performance and was not capable to perform on a GPU. So at the moment I try to bring it working again with a reduced version of the concept and am on the way to the second PoC, but there it is possible that it failes and I have to cancel this project.
+- **additional commentary**: Even in the current version 0.2.0 it is still only a proof of concept, because the tests are still very small and the test-data still not very useful. Thanks to the new GPU-support, the improved concept and the complete rework of the processing structure, the performance is no big issue anymore. But I'm still not very happy with this actual state, because some parameters are hard to handle, which makes manually ajustments in the learning process necessary. There is some type of automatic calibration necessary. Beside this, I still have to check, if the concept also works in bigger scaling, which will be the main task for version 0.3.0.
 
-- **current version**: `0.1.0` (first PoC)
+- **current version**: `0.2.0`
 
 - **language**: `C++14`
 
@@ -741,7 +710,6 @@ libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunem
 libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
 libKitsunemimiOpencl | v0.1.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
 libKitsunemimiSakuraMessaging | v0.4.0 | -
-libKitsunemimiKyoukoCommon | master | -
 
 ## ToriiGateway
 
