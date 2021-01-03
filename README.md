@@ -423,7 +423,7 @@ libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemi
 
 - **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **license**: `MIT`
 
