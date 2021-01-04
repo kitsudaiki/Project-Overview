@@ -717,7 +717,7 @@ libKitsunemimiSakuraMessaging | v0.4.0 | -
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.1.3`
+- **current version**: `0.1.4`
 
 - **language**: `C++14`
 
@@ -766,7 +766,7 @@ libKitsunemimiSakuraMessaging | v0.4.0 | -
 
 - **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `JavaScript + HTML + CSS`
 
@@ -793,7 +793,7 @@ libKitsunemimiSakuraGui | v0.1.0 | -
 
 - **content**: Client to directly interact with the KyoukoMind-instance.
 
-- **current version**: -
+- **current version**: `0.1.0`
 
 - **language**: `JavaScript + HTML + CSS`
 
