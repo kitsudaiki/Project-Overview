@@ -34,6 +34,8 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [MiraiControl](#MiraiControl)
 
+[libKitsunemimiAiParser](#libKitsunemimiAiParser)
+
 ### generic project libraries
 
 Libraries for common usage inside of the Kitsunemimi-Project. 
@@ -708,8 +710,9 @@ libKitsunemimiSakuraLang | v0.7.1 | https://github.com/kitsudaiki/libKitsunemimi
 libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
-libKitsunemimiOpencl | v0.1.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+libKitsunemimiOpencl | v0.2.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
 libKitsunemimiSakuraMessaging | v0.4.0 | -
+libKitsunemimiAiParser | v0.1.0 | -
 
 ## ToriiGateway
 
@@ -758,6 +761,36 @@ libKitsunemimiSakuraLang | v0.7.1 | https://github.com/kitsudaiki/libKitsunemimi
 libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiSakuraMessaging | v0.4.0 | -
+
+## libKitsunemimiAiParser
+
+#### Metadata
+
+- **content**: Parser-library for the input-files of KyoukoMind.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `self-hosted Gitlab`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 ## MiyuMonitoring
