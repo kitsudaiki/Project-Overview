@@ -81,7 +81,7 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.16.1`
+- **current version**: `0.17.0`
 
 - **license**: `MIT`
 
@@ -699,7 +699,7 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.17.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
@@ -750,7 +750,7 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.17.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
@@ -790,7 +790,7 @@ GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.17.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 
 ## MiyuMonitoring
