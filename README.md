@@ -14,10 +14,6 @@ The following diagramm shows the relations of the library and tools with each ot
   <img src=".pictures/overview.png?raw=true" alt="Overview"/>
 </p>
 
-### Side-Projects
-
-[SakuraTree](#SakuraTree) (paused)
-
 Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
 ### Main-Project (still private)
@@ -35,6 +31,10 @@ This is the main-project here, but it is still far away to be usable for any tas
 [MiraiControl](#MiraiControl)
 
 [libKitsunemimiAiParser](#libKitsunemimiAiParser)
+
+### Side-Projects
+
+[SakuraTree](#SakuraTree) (paused)
 
 ### generic project libraries
 
@@ -75,593 +75,9 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 ## Repositories
 
-### libKitsunemimiCommon 
+__________
 
-#### Metadata
-
-- **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
-
-- **current version**: `0.17.0`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-
-
-### libKitsunemimiPersistence
-
-#### Metadata
-
-- **content**: This library contains all my functions for interactions with the storage. At the moment its the smalest of my projects and only contains functionality to read, modify and write binaray- and text- files, handle an sqlite3-database and write log-files.
-
-- **current version**: `0.10.1`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-sqlite3 library | libsqlite3-dev | 3.x | handling of sqlite databases (only when build with sqlite)
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-
-
-## libKitsunemimiJson
-
-#### Metadata
-
-- **content**: Parser for the content of json-files.
-
-- **current version**: `0.10.5`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJson.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-
-
-## libKitsunemimiIni
-
-#### Metadata
-
-- **content**: Parser for the content of ini-files.
-
-- **current version**: `0.4.6`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiIni.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-
-
-
-## libKitsunemimiJinja2
-
-#### Metadata
-
-- **content**: Simple but imcomplete converter for jinja2-templates.
-
-- **current version**: `0.8.0`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.4 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
-
-
-
-## libKitsunemimiNetwork
-
-#### Metadata
-
-- **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
-
-- **current version**: `0.6.5`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-
-
-## libKitsunemimiArgs
-
-#### Metadata
-
-- **content**: Small and easy to use parser for CLI-arguments.
-
-- **current version**: `0.2.1`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-
-
-## libKitsunemimiConfig
-
-#### Metadata
-
-- **content**: Parser for cli-arguments.
-
-- **current version**: `0.2.3`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-
-
-## libKitsunemimiObj
-
-#### Metadata
-
-- **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
-
-- **current version**: `0.1.1`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiObj.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-
-## libKitsunemimiOpencl
-
-#### Metadata
-
-- **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
-
-- **current version**: `0.2.0`
-
-- **license**: `MIT`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiOpencl.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-opencl-headers  | opencl-headers | 2.x | Header-files for opencl
-ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-
-
-## libKitsunemimiSakuraNetwork
-
-#### Metadata
-
-- **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
-
-- **current version**: `0.5.0`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-
-## libKitsunemimiSakuraLang
-
-#### Metadata
-
-- **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
-
-- **current version**: `0.7.1`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-
-#### required tools to build
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-
-## libKitsunemimiSakuraMessaging
-
-#### Metadata
-
-- **content**: Additional application-layer of the project related network stack.
-
-- **current version**: `0.4.0`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 |  https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.6 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiConfig | v0.2.3 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.7.1 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiNetwork | v0.6.5 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.5.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-
-
-## libKitsunemimiSakuraGui
-
-#### Metadata
-
-- **content**: Commonly used web-gui elements.
-
-- **current version**: `0.1.0`
-
-- **language**: `JavaScript + CSS`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-
-## SakuraTree
-
-(This project is actually paused.)
-
-SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
-
-Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
-
-#### Metadata
-
-- **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
-
-- **current version**: `0.4.1`
-
-- **license**: `Apache 2`
-
-- **language**: `C++14`
-
-- **visibility**: `public`
-
-- **location**: `Github`
-
-- **repo-path**: https://github.com/kitsudaiki/SakuraTree.git
-
-#### required tools to build
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-
-
-## KyoukoMind
+### KyoukoMind
 
 #### Metadata
 
@@ -714,7 +130,9 @@ libKitsunemimiOpencl | v0.2.0| https://github.com/kitsudaiki/libKitsunemimiOpenc
 libKitsunemimiSakuraMessaging | v0.4.0 | -
 libKitsunemimiAiParser | v0.1.0 | -
 
-## ToriiGateway
+__________
+
+### ToriiGateway
 
 #### Metadata
 
@@ -762,7 +180,87 @@ libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNet
 libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiSakuraMessaging | v0.4.0 | -
 
-## libKitsunemimiAiParser
+__________
+
+### MiyuMonitoring
+
+#### Metadata
+
+- **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
+
+- **current version**: `0.1.1`
+
+- **language**: `JavaScript + HTML + CSS`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### required official libraries
+
+repository-name | version | task
+--- | --- | ---
+bootstrap | 4.5.3 | styling for basic objects like tables
+
+#### Kitsunemimi-repositories
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiSakuraGui | v0.1.0 | -
+
+__________
+
+### MikoClient
+
+#### Metadata
+
+- **content**: Client to directly interact with the KyoukoMind-instance.
+
+- **current version**: `0.1.0`
+
+- **language**: `JavaScript + HTML + CSS`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### required official libraries
+
+repository-name | version | task
+--- | --- | ---
+bootstrap | 4.5.3 | styling for basic objects like tables
+
+#### Kitsunemimi-repositories
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiSakuraGui | v0.1.0 | -
+
+__________
+
+### MiraiControl
+
+#### Metadata
+
+- **content**: Controlling client to interact with a backend to check and set configurations.
+
+- **current version**: -
+
+- **language**: `go`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+go | golang | >= 1.7 | Compiler for the go code.
+
+__________
+
+### libKitsunemimiAiParser
 
 #### Metadata
 
@@ -792,76 +290,599 @@ Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.17.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
+__________
 
-## MiyuMonitoring
+### SakuraTree
 
-#### Metadata
+(This project is actually paused.)
 
-- **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
+SakuraTree provides an automation tool to deploy applications, with high performance thanks to some features like easy parallelism of tasks and a self-created file syntax. It was primary created for the components of the Kyouko-Project and beside this also to automate different tasks on my deployment at home.
 
-- **current version**: `0.1.1`
-
-- **language**: `JavaScript + HTML + CSS`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-#### required official libraries
-
-repository-name | version | task
---- | --- | ---
-bootstrap | 4.5.3 | styling for basic objects like tables
-
-#### Kitsunemimi-repositories
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiSakuraGui | v0.1.0 | -
-
-
-## MikoClient
+Documentation of current version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
 #### Metadata
 
-- **content**: Client to directly interact with the KyoukoMind-instance.
+- **content**: This is/should become a simple-to-use and fast automation tool to deploy tools and files on multiple nodes.
 
-- **current version**: `0.1.0`
+- **current version**: `0.4.1`
 
-- **language**: `JavaScript + HTML + CSS`
+- **license**: `Apache 2`
 
-- **visibility**: `private`
+- **language**: `C++14`
 
-- **location**: `Github`
-
-#### required official libraries
-
-repository-name | version | task
---- | --- | ---
-bootstrap | 4.5.3 | styling for basic objects like tables
-
-#### Kitsunemimi-repositories
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiSakuraGui | v0.1.0 | -
-
-## MiraiControl
-
-#### Metadata
-
-- **content**: Controlling client to interact with a backend to check and set configurations.
-
-- **current version**: -
-
-- **language**: `go`
-
-- **visibility**: `private`
+- **visibility**: `public`
 
 - **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/SakuraTree.git
 
 #### required tools to build
 
 name | repository | version | task
 --- | --- | --- | ---
-go | golang | >= 1.7 | Compiler for the go code.
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiJson | v0.10.4 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.5 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiSakuraLang | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+
+__________
+
+### libKitsunemimiSakuraNetwork
+
+#### Metadata
+
+- **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
+
+- **current version**: `0.5.0`
+
+- **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+
+__________
+
+### libKitsunemimiSakuraLang
+
+#### Metadata
+
+- **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
+
+- **current version**: `0.7.1`
+
+- **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+
+__________
+
+### libKitsunemimiSakuraMessaging
+
+#### Metadata
+
+- **content**: Additional application-layer of the project related network stack.
+
+- **current version**: `0.4.0`
+
+- **license**: `Apache 2`
+
+- **language**: `C++14`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 |  https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.5 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.0 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.6 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiConfig | v0.2.3 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.7.1 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.5 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.5.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+
+__________
+
+### libKitsunemimiSakuraGui
+
+#### Metadata
+
+- **content**: Commonly used web-gui elements.
+
+- **current version**: `0.1.0`
+
+- **language**: `JavaScript + CSS`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+__________
+
+### libKitsunemimiObj
+
+#### Metadata
+
+- **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
+
+- **current version**: `0.1.1`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiObj.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+__________
+
+### libKitsunemimiOpencl
+
+#### Metadata
+
+- **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
+
+- **current version**: `0.2.0`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+opencl-headers  | opencl-headers | 2.x | Header-files for opencl
+ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+__________
+
+### libKitsunemimiConfig
+
+#### Metadata
+
+- **content**: Parser for cli-arguments.
+
+- **current version**: `0.2.3`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiConfig.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+
+__________
+
+### libKitsunemimiArgs
+
+#### Metadata
+
+- **content**: Small and easy to use parser for CLI-arguments.
+
+- **current version**: `0.2.1`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiArgs.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+__________
+
+### libKitsunemimiNetwork
+
+#### Metadata
+
+- **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
+
+- **current version**: `0.6.5`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+__________
+
+### libKitsunemimiJinja2
+
+#### Metadata
+
+- **content**: Simple but imcomplete converter for jinja2-templates.
+
+- **current version**: `0.8.0`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.10.4 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+
+__________
+
+### libKitsunemimiIni
+
+#### Metadata
+
+- **content**: Parser for the content of ini-files.
+
+- **current version**: `0.4.6`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiIni.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
+### libKitsunemimiJson
+
+#### Metadata
+
+- **content**: Parser for the content of json-files.
+
+- **current version**: `0.10.5`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiJson.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
+### libKitsunemimiPersistence
+
+#### Metadata
+
+- **content**: This library contains all my functions for interactions with the storage. At the moment its the smalest of my projects and only contains functionality to read, modify and write binaray- and text- files, handle an sqlite3-database and write log-files.
+
+- **current version**: `0.10.1`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
+sqlite3 library | libsqlite3-dev | 3.x | handling of sqlite databases (only when build with sqlite)
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
+### libKitsunemimiCommon 
+
+#### Metadata
+
+- **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
+
+- **current version**: `0.17.0`
+
+- **license**: `MIT`
+
+- **language**: `C++14`
+
+- **visibility**: `public`
+
+- **location**: `Github`
+
+- **repo-path**: https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 6.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
