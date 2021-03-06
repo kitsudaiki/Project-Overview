@@ -14,8 +14,6 @@ The following diagramm shows the relations of the library and tools with each ot
   <img src=".pictures/overview.png?raw=true" alt="Overview"/>
 </p>
 
-Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
-
 ### Main-Project (still private)
 
 This is the main-project here, but it is still far away to be usable for any task, so its still private. In the core it provides an artificial neural network based on a concept created by myself. 
@@ -35,6 +33,8 @@ This is the main-project here, but it is still far away to be usable for any tas
 ### Side-Projects
 
 [SakuraTree](#SakuraTree) (paused)
+
+Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
 ### generic project libraries
 
