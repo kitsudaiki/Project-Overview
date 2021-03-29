@@ -83,7 +83,7 @@ __________
 
 - **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynamic than the commonly used deep-learning networks. Core characteristics:
     - No fully meshed random connections between nodes at the beginning. All connections are only created while learning new information.
-    - No strict layer structure. Layers are only optional and can also be partially or completely removed.
+    - No strict layer structure. Layers are only optional and can also be partially or completely disabled.
     - No limitation for to the range [0.0, 1.0] for input- and output-values. So no normalizing of input-values necessary.
 
 - **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 86,7% correct matches. This doesn't seems to the very good, but there is much potential for improvements in the parameters and initializing- and lerning-process, so the result is quite acceptable for the moment.
