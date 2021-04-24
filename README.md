@@ -86,7 +86,7 @@ __________
     - No strict layer structure. Layers are only optional and can also be partially or completely disabled.
     - No limitation for to the range [0.0, 1.0] for input- and output-values. So no normalizing of input-values necessary.
 
-- **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 92,1% correct matches. This doesn't seems to the very good, but there is much potential for improvements in the parameters and initializing- and lerning-process, so the result is quite acceptable for the moment.
+- **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 95.0% correct matches. This doesn't seems to the very good, but there is much potential for improvements in the parameters and initializing- and lerning-process, so the result is quite acceptable for the moment.
 
 - **current version**: `0.3.0`
 
