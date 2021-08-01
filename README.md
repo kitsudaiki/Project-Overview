@@ -22,13 +22,9 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [ToriiGateway](#ToriiGateway)
 
-[MiyuMonitoring](#MiyuMonitoring)
+[HanamiDashboard](#HanamiDashboard)
 
-[MikoClient](#MikoClient)
-
-[MiraiControl](#MiraiControl)
-
-[libKitsunemimiAiParser](#libKitsunemimiAiParser)
+[HanamiCli](#HanamiCli)
 
 ### Side-Projects
 
@@ -45,8 +41,6 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 [libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
 
 [libKitsunemimiSakuraMessaging](#libKitsunemimiSakuraMessaging)
-
-[libKitsunemimiSakuraGui](#libKitsunemimiSakuraGui)
 
 ### generic libraries
 
@@ -81,14 +75,15 @@ __________
 
 #### Metadata
 
-- **content**: Provides an artificial neural network based on a concept created by myself. It is way more dynamic than the commonly used deep-learning networks. Core characteristics:
+- **content**: Provides an artificial neural network based on a concept created by myself. Since version 0.4.0 it also has some influences of the commonly used deep-learning concept. 
+Core characteristics:
     - No fully meshed random connections between nodes at the beginning. All connections are only created while learning new information.
-    - No strict layer structure. Layers are only optional and can also be partially or completely disabled.
-    - No limitation for to the range [0.0, 1.0] for input- and output-values. So no normalizing of input-values necessary.
+    - No strict layer structure (layers are only optional).
+    - No limitation for to the range [0.0, 1.0] for input- and output-values.
 
-- **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 95.0% correct matches. This doesn't seems to the very good, but there is much potential for improvements in the parameters and initializing- and lerning-process, so the result is quite acceptable for the moment.
+- **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 98.1% correct matches.
 
-- **current version**: `0.3.0`
+- **current version**: `0.4.0`
 
 - **language**: `C++14`
 
@@ -105,7 +100,7 @@ make | make | >= 4.0 | process the make-file, which is created by qmake to build
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
 GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-xxd | xxd | >= 1.10 | converts text files into source code files
+xxd | xxd | >= 1.10 | converts text files into source code files, which is used to complile the OpenCl-kernel file into the source-code.
 
 #### Required generic libraries
 
@@ -119,19 +114,17 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.7.2 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiObj | v0.1.1| https://github.com/kitsudaiki/libKitsunemimiObj.git
-libKitsunemimiOpencl | v0.2.0| https://github.com/kitsudaiki/libKitsunemimiOpencl.git
-libKitsunemimiSakuraMessaging | v0.4.0 | -
-libKitsunemimiAiParser | v0.2.0 | -
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.6 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.7 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiArgs | v0.2.2 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | v0.2.4 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.8.0| https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.6 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiOpencl | v0.3.0 | https://github.com/kitsudaiki/libKitsunemimiOpencl.git
+libKitsunemimiSakuraMessaging | v0.4.1 | -
 
 __________
 
@@ -141,7 +134,7 @@ __________
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.2.0`
+- **current version**: `0.3.0`
 
 - **language**: `C++14`
 
@@ -172,26 +165,26 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiArgs | v0.2.1 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.6 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.7 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiArgs | v0.2.2 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiConfig | v0.2.3 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.7.2 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraMessaging | v0.4.0 | -
+libKitsunemimiSakuraLang | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.6 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.6.0 | https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraMessaging | v0.4.1 | -
 
 __________
 
-### MiyuMonitoring
+### HanamiDashboard
 
 #### Metadata
 
-- **content**: Graphical monitoring tool for visualization of the activity inside of the KyoukoMind-instance.
+- **content**: Web-Client to directly interact with the KyoukoMind-instance.
 
-- **current version**: `0.1.1`
+- **current version**: -
 
 - **language**: `JavaScript + HTML + CSS`
 
@@ -199,53 +192,13 @@ __________
 
 - **location**: `Github`
 
-#### required official libraries
-
-repository-name | version | task
---- | --- | ---
-bootstrap | 4.5.3 | styling for basic objects like tables
-
-#### Kitsunemimi-repositories
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiSakuraGui | v0.1.0 | -
-
 __________
 
-### MikoClient
+### HanamiCli
 
 #### Metadata
 
-- **content**: Client to directly interact with the KyoukoMind-instance.
-
-- **current version**: `0.1.0`
-
-- **language**: `JavaScript + HTML + CSS`
-
-- **visibility**: `private`
-
-- **location**: `Github`
-
-#### required official libraries
-
-repository-name | version | task
---- | --- | ---
-bootstrap | 4.5.3 | styling for basic objects like tables
-
-#### Kitsunemimi-repositories
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiSakuraGui | v0.1.0 | -
-
-__________
-
-### MiraiControl
-
-#### Metadata
-
-- **content**: Controlling client to interact with a backend to check and set configurations.
+- **content**: Cli-Client to directly interact with the KyoukoMind-instance.
 
 - **current version**: -
 
@@ -259,41 +212,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-go | golang | >= 1.7 | Compiler for the go code.
-
-__________
-
-### libKitsunemimiAiParser
-
-#### Metadata
-
-- **content**: Parser-library for the input-files of KyoukoMind.
-
-- **current version**: `0.2.0`
-
-- **language**: `C++14`
-
-- **visibility**: `private`
-
-- **location**: `self-hosted Gitlab`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+go | golang | >= 1.13 | Compiler for the go code.
 
 __________
 
@@ -357,7 +276,7 @@ __________
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.5.0`
+- **current version**: `0.6.0`
 
 - **license**: `Apache 2`
 
@@ -388,9 +307,9 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | v0.6.5 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiNetwork | v0.6.6 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
 __________
 
@@ -400,7 +319,7 @@ __________
 
 - **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.7.2`
+- **current version**: `0.8.0`
 
 - **license**: `Apache 2`
 
@@ -433,9 +352,9 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
 libKitsunemimiCommon | v0.18.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.6 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
 __________
 
@@ -445,7 +364,7 @@ __________
 
 - **content**: Additional application-layer of the project related network stack.
 
-- **current version**: `0.4.0`
+- **current version**: `0.4.1`
 
 - **license**: `Apache 2`
 
@@ -476,31 +395,15 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 |  https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.5 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.0 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.4.6 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiConfig | v0.2.3 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiSakuraLang | v0.7.1 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiNetwork | v0.6.5 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.5.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-
-__________
-
-### libKitsunemimiSakuraGui
-
-#### Metadata
-
-- **content**: Commonly used web-gui elements.
-
-- **current version**: `0.1.0`
-
-- **language**: `JavaScript + CSS`
-
-- **visibility**: `private`
-
-- **location**: `Github`
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 |  https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiJson | v0.10.6 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.4.7 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiConfig | v0.2.4 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiSakuraLang | v0.8.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiNetwork | v0.6.6 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiSakuraNetwork | v0.6.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 
 __________
 
@@ -551,7 +454,7 @@ __________
 
 - **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
 
-- **current version**: `0.2.0`
+- **current version**: `0.3.0`
 
 - **license**: `MIT`
 
@@ -583,8 +486,8 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 __________
 
@@ -594,7 +497,7 @@ __________
 
 - **content**: Parser for cli-arguments.
 
-- **current version**: `0.2.3`
+- **current version**: `0.2.4`
 
 - **license**: `MIT`
 
@@ -626,9 +529,9 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiIni | v0.4.4 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 __________
 
@@ -638,7 +541,7 @@ __________
 
 - **content**: Small and easy to use parser for CLI-arguments.
 
-- **current version**: `0.2.1`
+- **current version**: `0.2.2`
 
 - **license**: `MIT`
 
@@ -668,8 +571,8 @@ boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with fi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 __________
 
@@ -679,7 +582,7 @@ __________
 
 - **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
 
-- **current version**: `0.6.5`
+- **current version**: `0.6.6`
 
 - **license**: `MIT`
 
@@ -710,8 +613,8 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.1 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
 
 __________
 
@@ -721,7 +624,7 @@ __________
 
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
-- **current version**: `0.8.0`
+- **current version**: `0.8.1`
 
 - **license**: `MIT`
 
@@ -747,8 +650,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.4 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.10.6 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 __________
 
@@ -758,7 +661,7 @@ __________
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.6`
+- **current version**: `0.4.7`
 
 - **license**: `MIT`
 
@@ -784,7 +687,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.15.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -794,7 +697,7 @@ __________
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.5`
+- **current version**: `0.10.6`
 
 - **license**: `MIT`
 
@@ -820,7 +723,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -830,7 +733,7 @@ __________
 
 - **content**: This library contains all my functions for interactions with the storage. At the moment its the smalest of my projects and only contains functionality to read, modify and write binaray- and text- files, handle an sqlite3-database and write log-files.
 
-- **current version**: `0.10.1`
+- **current version**: `0.10.2`
 
 - **license**: `MIT`
 
@@ -861,7 +764,7 @@ sqlite3 library | libsqlite3-dev | 3.x | handling of sqlite databases (only when
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.16.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
