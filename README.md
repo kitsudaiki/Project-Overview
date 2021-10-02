@@ -26,9 +26,11 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [HanamiCli](#HanamiCli)
 
+[libKitsunemimiHanamiMessaging](#libKitsunemimiHanamiMessaging)
+
 ### Side-Projects
 
-[SakuraTree](#SakuraTree) (paused)
+[SakuraTree](#SakuraTree) (deprecated)
 
 Documentation of latest tagged version: https://files.kitsunemimi.moe/docs/SakuraTree-Documentation_0_4_1.pdf
 
@@ -39,8 +41,6 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 [libKitsunemimiSakuraNetwork](#libKitsunemimiSakuraNetwork)
 
 [libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
-
-[libKitsunemimiSakuraMessaging](#libKitsunemimiSakuraMessaging)
 
 ### generic libraries
 
@@ -60,9 +60,13 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 [libKitsunemimiIni](#libKitsunemimiIni)
 
+[libKitsunemimiJwt](#libKitsunemimiJwt)
+
+[libKitsunemimiCrypto](#libKitsunemimiCrypto)
+
 [libKitsunemimiJson](#libKitsunemimiJson)
 
-[libKitsunemimiPersistence](#libKitsunemimiPersistence)
+[libKitsunemimiPersistence](#libKitsunemimiPersistence) (deprecated)
 
 [libKitsunemimiCommon](#libKitsunemimiCommon)
 
@@ -691,13 +695,81 @@ libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCo
 
 __________
 
+### libKitsunemimiJwt
+
+#### Metadata
+
+- **content**: Library to create and validate JWT-tokens.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
+ssl library | libssl-dev | >= 1.1.1f | provides signing-functions
+crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCrypto | v0.1.0 |  -
+libKitsunemimiJson | v0.10.7 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+
+__________
+
+### libKitsunemimiCrypto
+
+#### Metadata
+
+- **content**: Wrapper-library for crypto-operation from other external libraries, to simplify the usage of basic operation like AES, HMAC, SHA256, etc. 
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+- **location**: `Github`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+ssl library | libssl-dev | >= 1.1.1f | provides signing-functions
+crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
 ### libKitsunemimiJson
 
 #### Metadata
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.6`
+- **current version**: `0.10.7`
 
 - **license**: `MIT`
 
@@ -713,7 +785,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
@@ -723,11 +795,13 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
 ### libKitsunemimiPersistence
+
+**Deprecated repository**
 
 #### Metadata
 
@@ -774,11 +848,11 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.19.0`
+- **current version**: `0.20.0`
 
 - **license**: `MIT`
 
-- **language**: `C++14`
+- **language**: `C++17`
 
 - **visibility**: `public`
 
@@ -790,7 +864,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 
