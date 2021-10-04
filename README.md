@@ -347,11 +347,11 @@ __________
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.7.0`
+- **current version**: `0.7.1`
 
 - **license**: `Apache 2`
 
-- **language**: `C++14`
+- **language**: `C++17`
 
 - **visibility**: `public`
 
@@ -369,16 +369,14 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 name | repository | version | task
 --- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiNetwork | v0.6.6 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiNetwork | v0.6.7 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
 __________
 
@@ -388,11 +386,11 @@ __________
 
 - **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.9.0`
+- **current version**: `0.9.1`
 
 - **license**: `Apache 2`
 
-- **language**: `C++14`
+- **language**: `C++17`
 
 - **visibility**: `public`
 
@@ -408,20 +406,13 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
 GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.18.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiJson | v0.10.6 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiCommon | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.10.7 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
 __________
 
@@ -463,11 +454,11 @@ __________
 
 - **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
 
-- **current version**: `0.3.0`
+- **current version**: `0.3.1`
 
-- **license**: `MIT`
+- **license**: `Apache 2`
 
-- **language**: `C++14`
+- **language**: `C++17`
 
 - **visibility**: `public`
 
@@ -485,7 +476,6 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 name | repository | version | task
 --- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
 opencl-headers  | opencl-headers | 2.x | Header-files for opencl
 ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
@@ -493,8 +483,7 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
+libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -504,11 +493,11 @@ __________
 
 - **content**: Parser for cli-arguments.
 
-- **current version**: `0.2.4`
+- **current version**: `0.2.5`
 
 - **license**: `MIT`
 
-- **language**: `C++14`
+- **language**: `C++17`
 
 - **visibility**: `public`
 
@@ -524,19 +513,12 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
 GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-boost-filesystem library | libboost-filesystem-dev | 1.6x | interactions with files and directories on the system
-
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.18.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiPersistence | v0.10.2 | https://github.com/kitsudaiki/libKitsunemimiPersistence.git
-libKitsunemimiIni | v0.4.6 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiIni | v0.4.7 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 __________
 
