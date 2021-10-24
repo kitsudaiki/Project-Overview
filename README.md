@@ -48,6 +48,8 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
 
+[libKitsunemimiCpu](#libKitsunemimiCpu)
+
 [libKitsunemimiObj](#libKitsunemimiObj)
 
 [libKitsunemimiOpencl](#libKitsunemimiOpencl)
@@ -413,6 +415,39 @@ Repository-Name | Version-Tag | Download-Path
 libKitsunemimiCommon | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.10.7 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+
+__________
+
+### libKitsunemimiCpu
+
+#### Metadata
+
+- **content**: Simple library to read different information of the cpu, like topological information, speed and energy consumption with RAPL, manipulate the speed of single cores of the cpu and read information of the local memory.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.21.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+#### Other requirements for reading energy-consumption
+
+- for CPUs of AMD Zen/Zen2 Linux-Kernel of version `5.8` or newer must be used, for Zen3 Linux-Kernel of version `5.11` or newer
+- the `msr` kernel-module must be available and loaded
 
 __________
 
@@ -806,7 +841,7 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.20.0`
+- **current version**: `0.21.0`
 
 - **license**: `MIT`
 
