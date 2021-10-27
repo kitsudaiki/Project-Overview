@@ -526,9 +526,9 @@ __________
 
 #### Metadata
 
-- **content**: Parser for cli-arguments.
+- **content**: Parser for ini-formated config files.
 
-- **current version**: `0.2.5`
+- **current version**: `0.3.0`
 
 - **license**: `MIT`
 
@@ -552,8 +552,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiIni | v0.4.7 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiIni | v0.4.8 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 __________
 
@@ -668,7 +668,7 @@ __________
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.8`
+- **current version**: `0.4.9`
 
 - **license**: `MIT`
 
@@ -692,7 +692,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -702,7 +702,7 @@ __________
 
 - **content**: Library to create and validate JWT-tokens.
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `C++17`
 
@@ -724,9 +724,9 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiCrypto | v0.1.0 |  -
-libKitsunemimiJson | v0.10.7 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCrypto | v0.1.1 |  -
+libKitsunemimiJson | v0.10.8 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 __________
 
@@ -736,7 +736,7 @@ __________
 
 - **content**: Wrapper-library for crypto-operation from other external libraries, to simplify the usage of basic operation like AES, HMAC, SHA256, etc. 
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `C++17`
 
@@ -756,7 +756,7 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -766,7 +766,7 @@ __________
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.7`
+- **current version**: `0.10.8`
 
 - **license**: `MIT`
 
@@ -790,7 +790,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -841,7 +841,7 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.21.0`
+- **current version**: `0.22.0`
 
 - **license**: `MIT`
 
