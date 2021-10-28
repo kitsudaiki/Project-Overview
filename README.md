@@ -44,9 +44,13 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 [libKitsunemimiSakuraLang](#libKitsunemimiSakuraLang)
 
+[libKitsunemimiSakuraDatabase](#libKitsunemimiSakuraDatabase)
+
 ### generic libraries
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
+
+[libKitsunemimiSqlite](#libKitsunemimiSqlite)
 
 [libKitsunemimiCpu](#libKitsunemimiCpu)
 
@@ -418,13 +422,72 @@ libKitsunemimiJinja2 | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiJinj
 
 __________
 
+### libKitsunemimiSakuraDatabase
+
+#### Metadata
+
+- **content**: Abstration-layer for access databases. At the moment it only contains functionalities for easier creating of sql-requests.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.22.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiSqlite | v0.1.0 | -
+
+__________
+
+### libKitsunemimiSqlite
+
+#### Metadata
+
+- **content**: Simple wrapper-library for Sqlit3 databases.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.22.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
 ### libKitsunemimiCpu
 
 #### Metadata
 
 - **content**: Simple library to read different information of the cpu, like topological information, speed and energy consumption with RAPL, manipulate the speed of single cores of the cpu and read information of the local memory.
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `C++17`
 
@@ -442,7 +505,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.21.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 #### Other requirements for reading energy-consumption
 
@@ -563,7 +626,7 @@ __________
 
 - **content**: Small and easy to use parser for CLI-arguments.
 
-- **current version**: `0.3.0`
+- **current version**: `0.3.1`
 
 - **license**: `MIT`
 
@@ -585,7 +648,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -595,7 +658,7 @@ __________
 
 - **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
 
-- **current version**: `0.6.7`
+- **current version**: `0.7.0`
 
 - **license**: `MIT`
 
@@ -617,13 +680,13 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 name | repository | version | task
 --- | --- | --- | ---
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
+ssl library | libssl-dev | >= 1.1.1f | encryption for tls connections
 
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -633,7 +696,7 @@ __________
 
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
-- **current version**: `0.8.2`
+- **current version**: `0.8.3`
 
 - **license**: `MIT`
 
@@ -657,8 +720,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.7 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.10.8 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 __________
 
