@@ -353,7 +353,7 @@ __________
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.7.1`
+- **current version**: `0.7.2`
 
 - **license**: `Apache 2`
 
@@ -381,8 +381,8 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiNetwork | v0.6.7 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiNetwork | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
 __________
 
@@ -520,7 +520,7 @@ __________
 
 - **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
 
-- **current version**: `0.1.2`
+- **current version**: `0.1.3`
 
 - **license**: `MIT`
 
@@ -542,7 +542,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -552,7 +552,7 @@ __________
 
 - **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
 
-- **current version**: `0.3.1`
+- **current version**: `0.3.2`
 
 - **license**: `Apache 2`
 
@@ -581,7 +581,7 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
