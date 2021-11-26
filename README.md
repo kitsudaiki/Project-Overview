@@ -46,6 +46,8 @@ Libraries for common usage inside of the Kitsunemimi-Project.
 
 [libKitsunemimiSakuraDatabase](#libKitsunemimiSakuraDatabase)
 
+[libKitsunemimiSakuraHardware](#libKitsunemimiSakuraHardware)
+
 ### generic libraries
 
 These simple generic libraries with wrapper, parser and functionalities I often use. Most of these stuff like CLI-argument-parser and so on, already exist in various implementations on github, but I wanded to create my own versions to have maximum control over the requirements and to have only a minimal set of funtions, which I really need.
@@ -353,7 +355,7 @@ __________
 
 - **content**: Self-created session-layer-protocol for network-communication in the Kitsunemimi-projects.
 
-- **current version**: `0.7.2`
+- **current version**: `0.8.0`
 
 - **license**: `Apache 2`
 
@@ -367,7 +369,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 
@@ -381,8 +383,8 @@ ssl library | libssl-dev | 1.1.x | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiNetwork | v0.7.0 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiNetwork | v0.8.1 | https://github.com/kitsudaiki/libKitsunemimiNetwork.git
 
 __________
 
@@ -392,7 +394,7 @@ __________
 
 - **content**: The library `libKitsunemimiSakuraLang` provides a simple script-language created by myself. It is packed as library for easy used in different tools. Originally it was created exclusively for the SakuraTree project (https://github.com/kitsudaiki/SakuraTree), but in the end it become generic and flexible enough to be also interesting for other upcoming projects, so it was moved into its own library.
 
-- **current version**: `0.9.1`
+- **current version**: `0.11.0`
 
 - **license**: `Apache 2`
 
@@ -406,7 +408,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
@@ -416,9 +418,9 @@ GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.20.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.7 | https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.8.2 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiCommon | v0.24.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.11.2 | https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.9.1 | https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 
 __________
 
@@ -428,7 +430,7 @@ __________
 
 - **content**: Abstration-layer for access databases. At the moment it only contains functionalities for easier creating of sql-requests.
 
-- **current version**: `0.1.0`
+- **current version**: `0.3.0`
 
 - **language**: `C++17`
 
@@ -442,13 +444,43 @@ g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
+uuid | uuid-dev | >= 2.30 | generate uuid's
 
 #### Required kitsunemimi libraries
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiSqlite | v0.1.0 | -
+libKitsunemimiCommon | v0.24.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiSqlite | v0.2.0 | -
+
+__________
+
+### libKitsunemimiSakuraHardware
+
+#### Metadata
+
+- **content**: Collect and aggregate information of the local available hardware ressources.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### required tools to build
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.23.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCpu | v0.2.0 | -
 
 __________
 
@@ -458,7 +490,7 @@ __________
 
 - **content**: Simple wrapper-library for Sqlit3 databases.
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -477,7 +509,7 @@ sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -487,7 +519,7 @@ __________
 
 - **content**: Simple library to read different information of the cpu, like topological information, speed and energy consumption with RAPL, manipulate the speed of single cores of the cpu and read information of the local memory.
 
-- **current version**: `0.1.1`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -505,7 +537,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 #### Other requirements for reading energy-consumption
 
@@ -520,7 +552,7 @@ __________
 
 - **content**: This library provides a simple and minimal wavefront obj-parser and creator to generate the content of such files.
 
-- **current version**: `0.1.3`
+- **current version**: `0.2.0`
 
 - **license**: `MIT`
 
@@ -542,7 +574,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -552,7 +584,7 @@ __________
 
 - **content**: Simple wrapper-library for some commonly used OpenCL-functionallities.
 
-- **current version**: `0.3.2`
+- **current version**: `0.4.0`
 
 - **license**: `Apache 2`
 
@@ -566,7 +598,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 
@@ -581,7 +613,7 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -591,7 +623,7 @@ __________
 
 - **content**: Parser for ini-formated config files.
 
-- **current version**: `0.3.0`
+- **current version**: `0.4.0`
 
 - **license**: `MIT`
 
@@ -605,7 +637,7 @@ __________
 
 name | repository | version | task
 --- | --- | --- | ---
-g++ | g++ | >= 6.0 | Compiler for the C++ code.
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
 make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
 qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
 FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
@@ -615,8 +647,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiIni | v0.4.8 | https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiIni | v0.5.0 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 
 __________
 
@@ -626,7 +658,7 @@ __________
 
 - **content**: Small and easy to use parser for CLI-arguments.
 
-- **current version**: `0.3.1`
+- **current version**: `0.4.0`
 
 - **license**: `MIT`
 
@@ -648,7 +680,7 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -658,7 +690,7 @@ __________
 
 - **content**: This is a small library for network connections. It provides servers and clients for unix-domain-sockets, tcp-sockets and ssl encrypted tcp-sockets.
 
-- **current version**: `0.7.0`
+- **current version**: `0.8.1`
 
 - **license**: `MIT`
 
@@ -686,7 +718,7 @@ ssl library | libssl-dev | >= 1.1.1f | encryption for tls connections
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -696,7 +728,7 @@ __________
 
 - **content**: Simple but imcomplete converter for jinja2-templates.
 
-- **current version**: `0.8.3`
+- **current version**: `0.9.1`
 
 - **license**: `MIT`
 
@@ -720,8 +752,8 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.10.8 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.24.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.11.2 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 __________
 
@@ -731,7 +763,7 @@ __________
 
 - **content**: Parser for the content of ini-files.
 
-- **current version**: `0.4.9`
+- **current version**: `0.5.1`
 
 - **license**: `MIT`
 
@@ -755,7 +787,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.24.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -765,7 +797,7 @@ __________
 
 - **content**: Library to create and validate JWT-tokens.
 
-- **current version**: `0.1.1`
+- **current version**: `0.4.0`
 
 - **language**: `C++17`
 
@@ -787,9 +819,9 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiCrypto | v0.1.1 |  -
-libKitsunemimiJson | v0.10.8 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiCommon | v0.24.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCrypto | v0.2.0 |  -
+libKitsunemimiJson | v0.11.2 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 
 __________
 
@@ -799,7 +831,7 @@ __________
 
 - **content**: Wrapper-library for crypto-operation from other external libraries, to simplify the usage of basic operation like AES, HMAC, SHA256, etc. 
 
-- **current version**: `0.1.1`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -819,7 +851,7 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -829,7 +861,7 @@ __________
 
 - **content**: Parser for the content of json-files.
 
-- **current version**: `0.10.8`
+- **current version**: `0.11.2`
 
 - **license**: `MIT`
 
@@ -853,7 +885,7 @@ GNU Bison | bison | 3.x | Build the parser-code together with the lexer-code.
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.22.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.24.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
@@ -904,7 +936,7 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.22.0`
+- **current version**: `0.24.0`
 
 - **license**: `MIT`
 
