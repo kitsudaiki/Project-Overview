@@ -76,6 +76,10 @@ These simple generic libraries with wrapper, parser and functionalities I often 
 
 [libKitsunemimiCpu](#libKitsunemimiCpu)
 
+[libKitsunemimiStorage](#libKitsunemimiStorage)
+
+[libKitsunemimiInterface](#libKitsunemimiInterface)
+
 [libKitsunemimiObj](#libKitsunemimiObj)
 
 [libKitsunemimiOpencl](#libKitsunemimiOpencl)
@@ -738,7 +742,7 @@ __________
 
 - **content**: Add user and project scroped handling of database-entries
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -763,10 +767,10 @@ sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.24.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.25.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiSqlite | v0.3.0 | -
-libKitsunemimiSakuraDatabase | v0.4.0 | -
+libKitsunemimiSakuraDatabase | v0.4.1 | -
 
 __________
 
@@ -928,7 +932,7 @@ __________
 
 - **content**: Abstration-layer for access databases. At the moment it only contains functionalities for easier creating of sql-requests.
 
-- **current version**: `0.4.0`
+- **current version**: `0.4.1`
 
 - **language**: `C++17`
 
@@ -948,7 +952,7 @@ uuid | uuid-dev | >= 2.30 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.25.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiSqlite | v0.3.0 | -
 
 __________
@@ -1017,7 +1021,7 @@ __________
 
 - **content**: Simple library to read different information of the cpu, like topological information, speed and energy consumption with RAPL, manipulate the speed of single cores of the cpu and read information of the local memory.
 
-- **current version**: `0.2.0`
+- **current version**: `0.3.0`
 
 - **language**: `C++17`
 
@@ -1035,12 +1039,68 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.23.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.25.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 #### Other requirements for reading energy-consumption
 
 - for CPUs of AMD Zen/Zen2 Linux-Kernel of version `5.8` or newer must be used, for Zen3 Linux-Kernel of version `5.11` or newer
 - the `msr` kernel-module must be available and loaded
+
+__________
+
+### libKitsunemimiStorage
+
+#### Metadata
+
+- **content**: Small library to collect information of the local storage.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.25.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+
+__________
+
+### libKitsunemimiInterface
+
+#### Metadata
+
+- **content**: Small library to collect information of the local network-interfaces.
+
+- **current version**: `0.1.0`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.25.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 
 __________
 
