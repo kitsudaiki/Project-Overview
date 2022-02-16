@@ -1,10 +1,6 @@
-# Kitsunemimi-Project-Meta
+# Project-Overview
 
-This repository is only to keep an overview of my public and private repositories. With this the version of library requirements should be in sync. Beside this it is for issue tickets, which affect all repositories.
-
-For the case that you ask, why it is named `Kitsunemimi-Project`: 
-Its is not related to the content of the repositories. At the momemnt with project-name is only a temporary solution and will be changed in the future. 
-Originally I searched for a name schema for the libraries to differentiation them from other libraries. For this and because my private domain was already `kitsunemimi.moe`, I decided to name my libraries `libKitsunemimi...` and after some time I decided to make this as to the project name and collect all my sub-projects under this name, because kitsunemimi are moe. ;) 
+This repository is only to keep an overview of my public and private repositories. With this, the version of library requirements should be in sync. Beside this it is for issue tickets, which affect all repositories.
 
 Contact for questions: tobias.anker@kitsunemimi.moe
 
@@ -15,6 +11,9 @@ The following diagramm shows the basic relations of the library and tools with e
 <p align="center">
   <img src=".pictures/overview.png?raw=true" alt="Overview"/>
 </p>
+
+For the case that you ask, why the libraries are all names `libKitsunemimi...`: 
+Originally I searched for a name schema for the libraries to differentiation them from other libraries. For this and because my private domain was already `kitsunemimi.moe`, I decided to name my libraries `libKitsunemimi...`, because kitsunemimi are moe. ;) 
 
 ### Project specific repositories
 
