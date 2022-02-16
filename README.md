@@ -27,9 +27,9 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [SagiriArchive](#SagiriArchive)
 
-[Nozomi...](#Nozomi...)
+[Nozomi_____](#Nozomi_____)
 
-[Izumi...](#Izumi...)
+[Izumi____](#Izumi____)
 
 [ToriiGateway](#ToriiGateway)
 
@@ -47,9 +47,9 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [libSagiriArchive](#libSagiriArchive)
 
-[libNozomi...](#libNozomi...)
+[libNozomi_____](#libNozomi_____)
 
-[libIzumi...](#libIzumi...)
+[libIzumi____](#libIzumi____)
 
 [libToriiGateway](#libToriiGateway)
 
@@ -380,7 +380,7 @@ libMisakaGuard | v0.1.0 | -
 
 __________
 
-### Nozomi...
+### Nozomi_____
 
 #### Metadata
 
@@ -437,7 +437,7 @@ libMisakaGuard | v0.1.0 | -
 
 __________
 
-### Izumi...
+### Izumi____
 
 #### Metadata
 
