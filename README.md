@@ -63,8 +63,6 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [libKitsunemimiHanamiEndpoints](#libKitsunemimiHanamiEndpoints)
 
-[libKitsunemimiHanamiPredifinitions](#libKitsunemimiHanamiPredifinitions) (deprecated)
-
 [libKitsunemimiHanamiCommon](#libKitsunemimiHanamiCommon)
 
 ### Side-Projects
@@ -1130,66 +1128,13 @@ go | golang | >= 1.13 | Compiler for the go code.
 
 __________
 
-### libKitsunemimiHanamiPredifinitions
-
-#### Metadata
-
-- **content**: Add generic predefined workflows for the communication between the single components (deprecated)
-
-- **current version**: `0.1.0`
-
-- **language**: `C++17`
-
-- **visibility**: `private`
-
-- **location**: `private gitlab`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 8.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-uuid | uuid-dev | >= 2.34 | generate uuid's
-crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.25.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiArgs | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiCrypto | v0.2.0 |  -
-libKitsunemimiJwt | v0.4.1 |  -
-libKitsunemimiSakuraNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiHanamiCommon | v0.1.0 |  -
-libKitsunemimiHanamiEndpoints | v0.1.0 |  -
-libKitsunemimiHanamiMessaging | v0.2.0 |  -
-
-__________
-
 ### libKitsunemimiHanamiMessaging
 
 #### Metadata
 
 - **content**: Additional application-layer of the project related network stack.
 
-- **current version**: `0.3.0`
+- **current version**: `0.4.0`
 
 - **language**: `C++17`
 
@@ -1219,7 +1164,7 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.3 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -1230,7 +1175,7 @@ libKitsunemimiCrypto | v0.2.0 |  -
 libKitsunemimiJwt | v0.4.1 |  -
 libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiHanamiCommon | v0.1.0 |  -
+libKitsunemimiHanamiCommon | v0.2.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 
 __________
@@ -1283,7 +1228,7 @@ __________
 
 - **content**: Add user and project scroped handling of database-entries
 
-- **current version**: `0.2.0`
+- **current version**: `0.3.0`
 
 - **language**: `C++17`
 
@@ -1310,10 +1255,10 @@ sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 | https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiSqlite | v0.3.0 | -
-libKitsunemimiSakuraDatabase | v0.4.1 | -
+libKitsunemimiSakuraDatabase | v0.5.0 | -
 
 __________
 
@@ -1365,7 +1310,7 @@ __________
 
 - **content**: Common library for the Hanami-Layer
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -1391,7 +1336,7 @@ uuid | uuid-dev | >= 2.34 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.1|  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.0|  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiIni | v0.5.1 | https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiArgs | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiConfig | v0.4.0 | https://github.com/kitsudaiki/libKitsunemimiConfig.git
@@ -1483,7 +1428,7 @@ __________
 
 - **content**: Abstration-layer for access databases. At the moment it only contains functionalities for easier creating of sql-requests.
 
-- **current version**: `0.4.1`
+- **current version**: `0.5.0`
 
 - **language**: `C++17`
 
@@ -1505,7 +1450,7 @@ uuid | uuid-dev | >= 2.30 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiSqlite | v0.3.0 | -
 
 __________
@@ -2036,7 +1981,7 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.25.3`
+- **current version**: `0.26.0`
 
 - **license**: `MIT`
 
