@@ -33,7 +33,7 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [ToriiGateway](#ToriiGateway)
 
-[TsurugiTester](#TsurugiTester)
+[TsugumiTester](#TsugumiTester)
 
 [HanamiDashboard](#HanamiDashboard)
 
@@ -134,7 +134,7 @@ Core characteristics:
 
 - **additional commentary**: Actual tests with the MNIST handwritten digits dataset came up to 98.1% correct matches.
 
-- **current version**: `0.8.0`
+- **current version**: `0.8.1`
 
 - **language**: `C++17`
 
@@ -168,7 +168,7 @@ ocl-icd-opencl-dev | ocl-icd-opencl-dev | 2.x | libraries for opencl
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -186,9 +186,9 @@ libKitsunemimiSakuraDatabase | v0.5.0 |  -
 libKitsunemimiHanamiCommon | v0.2.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiDatabase | v0.3.0 |  -
-libKitsunemimiHanamiMessaging | v0.4.0 |  -
-libKitsunemimiHanamiSdk | v0.3.0 | -
-libAzukiHeart | v0.1.0 | -
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
+libKitsunemimiHanamiSdk | v0.3.1 | -
+libAzukiHeart | v0.2.0 | -
 libMisakaGuard | v0.1.0 | -
 ibSagiriArchive | v0.2.0 | -
 
@@ -202,7 +202,7 @@ __________
     - Ressource-management for all component in order to reduce the energyconsumption of the system
     - Monitoring to keep the system stable
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -232,7 +232,7 @@ uuid | uuid-dev | >= 2.34 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.3 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -241,14 +241,14 @@ libKitsunemimiArgs | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiArgs.
 libKitsunemimiConfig | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiCrypto | v0.2.0 |  -
 libKitsunemimiJwt | v0.4.1 |  -
-libKitsunemimiCpu | v0.2.0 |  -
+libKitsunemimiCpu | v0.3.0 |  -
 libKitsunemimiSakuraNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiSakuraHardware | v0.1.0 |  -
+libKitsunemimiSakuraHardware | v0.1.1 |  -
 libKitsunemimiHanamiCommon | v0.1.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
-libKitsunemimiHanamiMessaging | v0.3.0 |  -
-libAzukiHeart | v0.1.0 | - 
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
+libAzukiHeart | v0.2.0 | - 
 libMisakaGuard | v0.1.0 | - 
 
 __________
@@ -262,7 +262,7 @@ __________
     - Create and validate JWT-Token
     - Automatic generation of user-specific REST-API-documentations for all components at runtime
 
-- **current version**: `0.1.1`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -293,71 +293,7 @@ sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.3 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
-libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
-libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
-libKitsunemimiNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiArgs | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiArgs.git
-libKitsunemimiConfig | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
-libKitsunemimiCrypto | v0.2.0 |  -
-libKitsunemimiJwt | v0.4.1 |  -
-libKitsunemimiSqlite | v0.3.0 |  -
-libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiSakuraDatabase | v0.4.1 |  -
-libKitsunemimiHanamiCommon | v0.1.0 |  -
-libKitsunemimiHanamiEndpoints | v0.1.0 |  -
-libKitsunemimiHanamiDatabase | v0.2.0 |  -
-libKitsunemimiHanamiPolicies | v0.1.0 |  -
-libKitsunemimiHanamiMessaging | v0.3.0 |  -
-libAzukiHeart | v0.1.0 | -
-libMisakaGuard | v0.1.0 | -
-
-__________
-
-### SagiriArchive
-
-#### Metadata
-
-- **content**: 
-    - Handling for all persisted objects in the backend (train-data, snapshots, etc.)
-    - Central logging
-        - Error-log
-        - Audit-log
-
-- **current version**: `0.3.0`
-
-- **language**: `C++17`
-
-- **visibility**: `private`
-
-- **location**: `private gitlab`
-
-#### Required build tools
-
-name | repository | version | task
---- | --- | --- | ---
-g++ | g++ | >= 8.0 | Compiler for the C++ code.
-make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
-qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
-FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
-GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
-
-#### Required generic libraries
-
-name | repository | version | task
---- | --- | --- | ---
-ssl library | libssl-dev | 1.1.x | encryption for tls connections
-crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
-uuid | uuid-dev | >= 2.34 | generate uuid's
-sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
-
-#### Required kitsunemimi libraries
-
-Repository-Name | Version-Tag | Download-Path
---- | --- | ---
-libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -373,8 +309,72 @@ libKitsunemimiSakuraDatabase | v0.5.0 |  -
 libKitsunemimiHanamiCommon | v0.2.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiDatabase | v0.3.0 |  -
-libKitsunemimiHanamiMessaging | v0.4.0 |  -
-libAzukiHeart | v0.1.0 | -
+libKitsunemimiHanamiPolicies | v0.1.0 |  -
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
+libAzukiHeart | v0.2.0 | -
+libMisakaGuard | v0.1.0 | -
+
+__________
+
+### SagiriArchive
+
+#### Metadata
+
+- **content**: 
+    - Handling for all persisted objects in the backend (train-data, snapshots, etc.)
+    - Central logging
+        - Error-log
+        - Audit-log
+
+- **current version**: `0.3.1`
+
+- **language**: `C++17`
+
+- **visibility**: `private`
+
+- **location**: `private gitlab`
+
+#### Required build tools
+
+name | repository | version | task
+--- | --- | --- | ---
+g++ | g++ | >= 8.0 | Compiler for the C++ code.
+make | make | >= 4.0 | process the make-file, which is created by qmake to build the programm with g++
+qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is similar to cmake and create the make-file for compilation.
+FLEX | flex | >= 2.6 | Build the lexer-code for all used parser.
+GNU Bison | bison | >= 3.0 | Build the parser-code together with the lexer-code.
+
+#### Required generic libraries
+
+name | repository | version | task
+--- | --- | --- | ---
+ssl library | libssl-dev | 1.1.x | encryption for tls connections
+crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
+uuid | uuid-dev | >= 2.34 | generate uuid's
+sqlite3 library | libsqlite3-dev | >= 3.0 | handling of sqlite databases
+
+#### Required kitsunemimi libraries
+
+Repository-Name | Version-Tag | Download-Path
+--- | --- | ---
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
+libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
+libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
+libKitsunemimiNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
+libKitsunemimiArgs | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiArgs.git
+libKitsunemimiConfig | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
+libKitsunemimiCrypto | v0.2.0 |  -
+libKitsunemimiJwt | v0.4.1 |  -
+libKitsunemimiSqlite | v0.3.0 |  -
+libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
+libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
+libKitsunemimiSakuraDatabase | v0.5.0 |  -
+libKitsunemimiHanamiCommon | v0.2.0 |  -
+libKitsunemimiHanamiEndpoints | v0.1.0 |  -
+libKitsunemimiHanamiDatabase | v0.3.0 |  -
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
+libAzukiHeart | v0.2.0 | -
 libMisakaGuard | v0.1.0 | -
 ibSagiriArchive | v0.2.0 |  -
 
@@ -500,7 +500,7 @@ __________
 
 - **content**: Proxy for networking communication between the components.
 
-- **current version**: `0.6.0`
+- **current version**: `0.6.1`
 
 - **language**: `C++17`
 
@@ -531,7 +531,7 @@ boost-library | libboost1.71-dev | >= 1.71 | provides boost beast library for HT
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -544,8 +544,8 @@ libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsune
 libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
 libKitsunemimiHanamiCommon | v0.2.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
-libKitsunemimiHanamiMessaging | v0.4.0 |  -
-libAzukiHeart | v0.1.0 |  -
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
+libAzukiHeart | v0.2.0 |  -
 ibSagiriArchive | v0.2.0 |  -
 
 __________
@@ -558,7 +558,7 @@ __________
     - Functional tests for SDK-library, REST-API and CLI-tool
     - Benchmark tests
 
-- **current version**: `0.3.0`
+- **current version**: `0.3.1`
 
 - **language**: `C++17`
 
@@ -589,15 +589,13 @@ uuid | uuid-dev | >= 2.34 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
 libKitsunemimiArgs | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiArgs.git
 libKitsunemimiConfig | v0.4.0 |  https://github.com/kitsudaiki/libKitsunemimiConfig.git
 libKitsunemimiCrypto | v0.2.0 |  -
-libKitsunemimiNetwork | v0.8.2 |  https://github.com/kitsudaiki/libKitsunemimiNetwork.git
-libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
-libKitsunemimiHanamiSdk | v0.3.0 | -
+libKitsunemimiHanamiSdk | v0.3.1 | -
 libKitsunemimiHanamiCommon | v0.2.0 | -
 
 __________
@@ -661,7 +659,7 @@ __________
 
 - **content**: Lib for internal interaction with Azuki
 
-- **current version**: `0.1.0`
+- **current version**: `0.2.0`
 
 - **language**: `C++17`
 
@@ -691,7 +689,7 @@ crpyto++ | libcrypto++-dev | >= 5.6 | provides encryption-functions like AES
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.25.3 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiJinja2 | v0.9.1 |  https://github.com/kitsudaiki/libKitsunemimiJinja2.git
 libKitsunemimiIni | v0.5.1 |  https://github.com/kitsudaiki/libKitsunemimiIni.git
@@ -702,9 +700,9 @@ libKitsunemimiCrypto | v0.2.0 |  -
 libKitsunemimiJwt | v0.4.1 |  -
 libKitsunemimiSakuraNetwork | v0.8.4 |  https://github.com/kitsudaiki/libKitsunemimiSakuraNetwork.git
 libKitsunemimiSakuraLang | v0.12.0 |  https://github.com/kitsudaiki/libKitsunemimiSakuraLang.git
-libKitsunemimiHanamiCommon | v0.1.0 |  -
+libKitsunemimiHanamiCommon | v0.2.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
-libKitsunemimiHanamiMessaging | v0.3.0 |  -
+libKitsunemimiHanamiMessaging | v0.4.1 |  -
 
 __________
 
@@ -1084,7 +1082,7 @@ __________
 
 - **content**: SDK-library to provide functions for all supported actions to interact with the REST-API and automatic handling of the token-exchange.
 
-- **current version**: `0.3.0`
+- **current version**: `0.3.1`
 
 - **language**: `C++17`, `go`
 
@@ -1115,7 +1113,7 @@ uuid | uuid-dev | >= 2.34 | generate uuid's
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.26.0 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCommon | v0.26.1 |  https://github.com/kitsudaiki/libKitsunemimiCommon.git
 libKitsunemimiJson | v0.11.3 |  https://github.com/kitsudaiki/libKitsunemimiJson.git
 libKitsunemimiCrypto | v0.2.0 |  -
 libKitsunemimiHanamiCommon | v0.2.0 | -
@@ -1135,7 +1133,7 @@ __________
 
 - **content**: Additional application-layer of the project related network stack.
 
-- **current version**: `0.4.0`
+- **current version**: `0.4.1`
 
 - **language**: `C++17`
 
@@ -1462,7 +1460,7 @@ __________
 
 - **content**: Collect and aggregate information of the local available hardware ressources.
 
-- **current version**: `0.1.0`
+- **current version**: `0.1.1`
 
 - **language**: `C++17`
 
@@ -1482,8 +1480,8 @@ qmake | qt5-qmake | >= 5.0 | This package provides the tool qmake, which is simi
 
 Repository-Name | Version-Tag | Download-Path
 --- | --- | ---
-libKitsunemimiCommon | v0.23.0 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
-libKitsunemimiCpu | v0.2.0 | -
+libKitsunemimiCommon | v0.26.1 | https://github.com/kitsudaiki/libKitsunemimiCommon.git
+libKitsunemimiCpu | v0.3.0 | -
 
 __________
 
@@ -1982,7 +1980,7 @@ __________
 
 - **content**: Simple C++ library with commenly used functions for memory-handling, thread-handling, data representation and testing. 
 
-- **current version**: `0.26.0`
+- **current version**: `0.26.1`
 
 - **license**: `MIT`
 
