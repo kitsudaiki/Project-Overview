@@ -23,13 +23,13 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [AzukiHeart](#AzukiHeart)
 
-[MisakaGuard](#MisakaGuard)
+[MisakiGuard](#MisakiGuard)
 
 [SagiriArchive](#SagiriArchive)
 
 [Nozomi_____](#Nozomi_____)
 
-[Izumi____](#Izumi____)
+[Inori____](#Inori____)
 
 [ToriiGateway](#ToriiGateway)
 
@@ -43,13 +43,13 @@ This is the main-project here, but it is still far away to be usable for any tas
 
 [libAzukiHeart](#libAzukiHeart)
 
-[libMisakaGuard](#libMisakaGuard)
+[libMisakiGuard](#libMisakiGuard)
 
 [libSagiriArchive](#libSagiriArchive)
 
 [libNozomi_____](#libNozomi_____)
 
-[libIzumi____](#libIzumi____)
+[libInori____](#libInori____)
 
 [libToriiGateway](#libToriiGateway)
 
@@ -189,7 +189,7 @@ libKitsunemimiHanamiDatabase | v0.3.0 |  -
 libKitsunemimiHanamiMessaging | v0.4.1 |  -
 libKitsunemimiHanamiSdk | v0.3.1 | -
 libAzukiHeart | v0.2.0 | -
-libMisakaGuard | v0.1.0 | -
+libMisakiGuard | v0.1.0 | -
 ibSagiriArchive | v0.2.0 | -
 
 __________
@@ -249,11 +249,11 @@ libKitsunemimiHanamiCommon | v0.1.0 |  -
 libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiMessaging | v0.4.1 |  -
 libAzukiHeart | v0.2.0 | - 
-libMisakaGuard | v0.1.0 | - 
+libMisakiGuard | v0.1.0 | - 
 
 __________
 
-### MisakaGuard
+### MisakiGuard
 
 #### Metadata
 
@@ -312,7 +312,7 @@ libKitsunemimiHanamiDatabase | v0.3.0 |  -
 libKitsunemimiHanamiPolicies | v0.1.0 |  -
 libKitsunemimiHanamiMessaging | v0.4.1 |  -
 libAzukiHeart | v0.2.0 | -
-libMisakaGuard | v0.1.0 | -
+libMisakiGuard | v0.1.0 | -
 
 __________
 
@@ -375,7 +375,7 @@ libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiDatabase | v0.3.0 |  -
 libKitsunemimiHanamiMessaging | v0.4.1 |  -
 libAzukiHeart | v0.2.0 | -
-libMisakaGuard | v0.1.0 | -
+libMisakiGuard | v0.1.0 | -
 ibSagiriArchive | v0.2.0 |  -
 
 __________
@@ -433,11 +433,11 @@ libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiDatabase | v0.2.0 |  -
 libKitsunemimiHanamiMessaging | v0.3.0 |  -
 libAzukiHeart | v0.1.0 | -
-libMisakaGuard | v0.1.0 | -
+libMisakiGuard | v0.1.0 | -
 
 __________
 
-### Izumi____
+### Inori____
 
 #### Metadata
 
@@ -490,7 +490,7 @@ libKitsunemimiHanamiEndpoints | v0.1.0 |  -
 libKitsunemimiHanamiDatabase | v0.2.0 |  -
 libKitsunemimiHanamiMessaging | v0.3.0 |  -
 libAzukiHeart | v0.1.0 | -
-libMisakaGuard | v0.1.0 | -
+libMisakiGuard | v0.1.0 | -
 
 __________
 
@@ -706,11 +706,11 @@ libKitsunemimiHanamiMessaging | v0.4.1 |  -
 
 __________
 
-### libMisakaGuard
+### libMisakiGuard
 
 #### Metadata
 
-- **content**: Lib for internal interaction with Misaka
+- **content**: Lib for internal interaction with Misaki
 
 - **current version**: `0.1.0`
 
@@ -865,11 +865,11 @@ libKitsunemimiHanamiMessaging | v0.3.0 |  -
 
 __________
 
-### libIzumi...
+### libInori...
 
 #### Metadata
 
-- **content**: Lib for internal interaction with Izumi
+- **content**: Lib for internal interaction with Inori
 
 - **current version**: `-`
 
