@@ -1,6 +1,8 @@
 # Project-Overview
 
-This repository is only to keep an overview of my public and private repositories. With this, the version of library requirements should be in sync. Beside this it is for issue tickets, which affect all repositories.
+**IMPORTANT**: The whole project will become open-source in the next few month and then ALL private repositories listed below will become public. There have to be done some basic open tasks and at least some basic documentation. This doesn't mean, that the project is in a stable useful production-ready state then, but at least it would be a presentable state. You can follow my account to get a notification, when I set the repositories to public.
+
+This repository is only to keep an overview of my public and private repositories. With this, the version of library requirements should be in sync. 
 
 Contact for questions: tobias.anker@kitsunemimi.moe
 
